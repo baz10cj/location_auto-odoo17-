@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Véhicule">
+  <defs>
+    <linearGradient id="la-veh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12301f"/>
+      <stop offset="1" stop-color="#3d2a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#la-veh-bg)"/>
+  <g fill="rgba(244,235,221,0.30)">
+    <path d="M150 255 L195 175 L445 175 L490 255 L525 255 L525 325 L465 325 A 28 28 0 0 1 410 325 L230 325 A 28 28 0 0 1 175 325 L115 325 L115 255 Z"/>
+  </g>
+  <circle cx="212" cy="330" r="30" fill="#0c1112"/>
+  <circle cx="212" cy="330" r="13" fill="rgba(244,235,221,0.45)"/>
+  <circle cx="428" cy="330" r="30" fill="#0c1112"/>
+  <circle cx="428" cy="330" r="13" fill="rgba(244,235,221,0.45)"/>
+  <rect x="215" y="180" width="210" height="55" rx="22" fill="rgba(244,235,221,0.22)"/>
+  <text x="320" y="405" text-anchor="middle" font-family="Karla, Arial, sans-serif" font-size="30" letter-spacing="4" fill="rgba(244,235,221,0.55)">VÉHICULE</text>
+</svg>

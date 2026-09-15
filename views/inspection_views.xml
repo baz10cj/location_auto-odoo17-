@@ -1,0 +1,113 @@
+<odoo>
+    <record id="view_location_etat_lieux_tree" model="ir.ui.view">
+        <field name="name">location.etat.lieux.tree</field>
+        <field name="model">location.etat.lieux</field>
+        <field name="arch" type="xml">
+            <tree string="États des lieux">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="reservation_id"/>
+                <field name="contract_id"/>
+                <field name="vehicle_id"/>
+                <field name="partner_id"/>
+                <field name="date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_location_etat_lieux_form" model="ir.ui.view">
+        <field name="name">location.etat.lieux.form</field>
+        <field name="model">location.etat.lieux</field>
+        <field name="arch" type="xml">
+            <form string="État des lieux">
+                <header>
+                    <button name="action_validate" string="Valider" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_set_draft" string="Retour brouillon" type="object" invisible="state != 'validated'"/>
+                    <button name="action_reset_customer_confirmation" string="Réinitialiser la confirmation client" type="object" class="btn-secondary" invisible="not customer_confirmation and not needs_reconfirmation"/>
+                    <button name="action_archive" string="Archiver" type="object" invisible="state != 'validated' or not active"/>
+                    <button name="action_unarchive" string="Restaurer" type="object" invisible="active"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <field name="active" invisible="1"/>
+                <sheet>
+                    <div class="alert alert-warning" invisible="not customer_confirmation" role="alert">
+                        <i class="fa fa-check-circle"/> Confirmé par le client le <field name="confirmation_date"/> — toute modification des détails de l'inspection réinitialisera la confirmation.
+                    </div>
+                    <div class="alert alert-info" invisible="not needs_reconfirmation" role="alert">
+                        <i class="fa fa-refresh"/> L'inspection a été modifiée après confirmation : le client doit confirmer à nouveau.
+                    </div>
+                    <group>
+                        <field name="name"/>
+                        <field name="type"/>
+                        <field name="reservation_id"/>
+                        <field name="contract_id"/>
+                        <field name="vehicle_id"/>
+                        <field name="partner_id"/>
+                        <field name="date"/>
+                    </group>
+                    <group>
+                        <field name="mileage_start" invisible="type != 'departure'"/>
+                        <field name="fuel_start" invisible="type != 'departure'"/>
+                        <field name="mileage_return" invisible="type != 'return'"/>
+                        <field name="fuel_return" invisible="type != 'return'"/>
+                        <field name="existing_damage"/>
+                        <field name="new_damage"/>
+                        <field name="observations"/>
+                    </group>
+                    <group>
+                        <field name="photo_ids" widget="many2many_binary"/>
+                        <field name="customer_signature" widget="signature"/>
+                        <field name="agent_signature" widget="signature"/>
+                        <field name="customer_confirmation"/>
+                        <field name="confirmation_date" readonly="1"/>
+                        <field name="needs_reconfirmation"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_location_etat_lieux_search" model="ir.ui.view">
+        <field name="name">location.etat.lieux.search</field>
+        <field name="model">location.etat.lieux</field>
+        <field name="arch" type="xml">
+            <search string="État des lieux">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="vehicle_id"/>
+                <filter string="Départ" name="departure" domain="[('type','=','departure')]"/>
+                <filter string="Retour" name="return" domain="[('type','=','return')]"/>
+                <filter string="Validé" name="validated" domain="[('state','=','validated')]"/>
+                <filter string="Brouillon" name="draft" domain="[('state','=','draft')]"/>
+                <filter string="Archivés" name="archived" domain="[('active','=',False)]"/>
+                <filter string="Confirmés" name="confirmed" domain="[('customer_confirmation','=',True)]"/>
+                <filter string="Reconfirmation requise" name="reconfirmation" domain="[('needs_reconfirmation','=',True)]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_location_etat_lieux" model="ir.actions.act_window">
+        <field name="name">Tous les états des lieux</field>
+        <field name="res_model">location.etat.lieux</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_location_etat_lieux_departure" model="ir.actions.act_window">
+        <field name="name">Départs</field>
+        <field name="res_model">location.etat.lieux</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_departure': 1}</field>
+    </record>
+
+    <record id="action_location_etat_lieux_return" model="ir.actions.act_window">
+        <field name="name">Retours</field>
+        <field name="res_model">location.etat.lieux</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_return': 1}</field>
+    </record>
+</odoo>

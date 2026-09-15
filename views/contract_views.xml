@@ -1,0 +1,58 @@
+<odoo>
+    <record id="view_location_contract_tree" model="ir.ui.view">
+        <field name="name">location.contract.tree</field>
+        <field name="model">location.contract</field>
+        <field name="arch" type="xml">
+            <tree string="Contrats">
+                <field name="name"/>
+                <field name="reservation_id"/>
+                <field name="customer_id"/>
+                <field name="vehicle_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_location_contract_form" model="ir.ui.view">
+        <field name="name">location.contract.form</field>
+        <field name="model">location.contract</field>
+        <field name="arch" type="xml">
+            <form string="Contrat">
+                <header>
+                    <button name="action_confirm" string="Confirmer" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_deliver_vehicle" string="Livrer le véhicule" type="object" invisible="state != 'confirmed'"/>
+                    <button name="action_close" string="Clôturer" type="object" invisible="state != 'vehicle_delivered'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_inspections" type="object" class="oe_stat_button" icon="fa-list">
+                            <field name="inspection_count" widget="statinfo" string="Inspections"/>
+                        </button>
+                        <button name="action_view_documents" type="object" class="oe_stat_button" icon="fa-file-text-o">
+                            <field name="documents_count" widget="statinfo" string="Documents client"/>
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name"/>
+                        <field name="reservation_id"/>
+                        <field name="customer_id"/>
+                        <field name="vehicle_id"/>
+                        <field name="customer_signature" widget="signature"/>
+                        <field name="signature_date"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_location_contract" model="ir.actions.act_window">
+        <field name="name">Contrats</field>
+        <field name="res_model">location.contract</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

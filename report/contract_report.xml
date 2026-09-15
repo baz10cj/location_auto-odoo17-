@@ -1,0 +1,98 @@
+<odoo>
+    <record id="report_contract" model="ir.actions.report">
+        <field name="name">Contract Report</field>
+        <field name="model">location.contract</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">location_auto.report_contract_template</field>
+        <field name="report_file">location_auto.report_contract_template</field>
+        <field name="binding_model_id" ref="model_location_contract"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_contract_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page" style="font-family: Arial, sans-serif; font-size: 11pt;">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h1 style="margin-bottom: 0;">Contrat de location</h1>
+                    <p style="margin-top: 5px; color: #555;">Document officiel de location de véhicule</p>
+                </div>
+                <t t-foreach="docs" t-as="contract">
+                    <table class="table table-sm" style="width: 100%; margin-bottom: 20px; border-collapse: collapse;">
+                        <tbody>
+                            <tr>
+                                <td style="width: 35%; padding: 5px; vertical-align: top;"><strong>Référence du contrat</strong></td>
+                                <td style="padding: 5px;"><span t-field="contract.name"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Référence réservation</strong></td>
+                                <td style="padding: 5px;"><span t-field="contract.reservation_id"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>État du contrat</strong></td>
+                                <td style="padding: 5px;"><span t-field="contract.state"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Client</strong></td>
+                                <td style="padding: 5px;"><span t-field="contract.customer_id"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Véhicule</strong></td>
+                                <td style="padding: 5px;"><span t-field="contract.vehicle_id"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Marque / Modèle</strong></td>
+                                <td style="padding: 5px;">
+                                    <t t-esc="contract.vehicle_id.brand or ''"/>
+                                    <t t-if="contract.vehicle_id.brand and contract.vehicle_id.model"> / </t>
+                                    <t t-esc="contract.vehicle_id.model or ''"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Immatriculation</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.vehicle_id.license_plate or '-'"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Début de location</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.reservation_id.start_date or 'Non défini'"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Fin de location</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.reservation_id.end_date or 'Non défini'"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Durée de location</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.rental_duration"/> jours</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Nombre d’inspections</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.inspection_count"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Documents client</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.documents_count"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 5px; vertical-align: top;"><strong>Commentaires</strong></td>
+                                <td style="padding: 5px;"><t t-esc="contract.reservation_id.comments or 'Aucun commentaire'"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; background: #fafafa;">
+                        <h3 style="margin-top: 0;">Détails du contrat</h3>
+                        <p>Ce contrat couvre la location du véhicule indiqué ci-dessus pour la période indiquée. Toutes les conditions générales de location s’appliquent.</p>
+                    </div>
+                    <t t-if="contract.get_customer_signature()">
+                        <div style="margin-top: 30px;">
+                            <p><strong>Signé par le client le :</strong> <span t-field="contract.signature_date"/></p>
+                            <div style="margin-top: 10px; width: 320px;">
+                                <img t-att-src="'data:image/png;base64,%s' % contract.get_customer_signature()" style="border: 1px solid #ddd; height: 80px; width: auto; display: block;" alt="Signature client"/>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </t>
+    </template>
+</odoo>

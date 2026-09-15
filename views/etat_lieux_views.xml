@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_form_etat_lieux" model="ir.ui.view">
+        <field name="name">location_auto.etat_lieux.form</field>
+        <field name="model">location_auto.etat_lieux</field>
+        <field name="arch" type="xml">
+            <form string="État des lieux">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="customer_id"/>
+                        <field name="vehicle"/>
+                        <field name="date"/>
+                        <field name="state"/>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_etat_lieux" model="ir.ui.view">
+        <field name="name">location_auto.etat_lieux.tree</field>
+        <field name="model">location_auto.etat_lieux</field>
+        <field name="arch" type="xml">
+            <tree string="États des lieux">
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="vehicle"/>
+                <field name="date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_etat_lieux" model="ir.actions.act_window">
+        <field name="name">États des lieux</field>
+        <field name="res_model">location_auto.etat_lieux</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="support_new_page" name="Support New Ticket">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Assistance</p>
+                        <h2>Comment pouvons-nous vous aider ?</h2>
+                        <p>Décrivez votre demande : notre équipe vous répond en temps réel sur cette conversation.</p>
+                    </div>
+                    <form t-attf-action="/support/submit" method="post" class="la-portal-form">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div class="la-field-group">
+                            <label for="sup_name">Sujet</label>
+                            <input type="text" name="name" id="sup_name" t-att-value="values and values.get('name')" required="required" placeholder="Ex : modifier ma réservation"/>
+                        </div>
+                        <div class="la-field-group">
+                            <label for="sup_email">Email</label>
+                            <input type="email" name="email" id="sup_email" t-att-value="values and values.get('email')" required="required" placeholder="votre@email.com"/>
+                        </div>
+                        <div class="la-field-group">
+                            <label for="sup_message">Votre message</label>
+                            <textarea name="message" id="sup_message" class="la-input" rows="6" required="required" placeholder="Décrivez votre demande en quelques lignes..."><t t-out="values and values.get('message')"/></textarea>
+                        </div>
+                        <button type="submit" class="la-btn la-btn-primary">Ouvrir la conversation</button>
+                    </form>
+                    <p class="la-portal-note" t-if="request.env.user._is_public()">Vous pouvez également vous connecter pour suivre vos demandes depuis votre espace client.</p>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="support_ticket_page" name="Support Conversation">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2 la-chat-card">
+                    <div class="la-portal-hero la-chat-hero">
+                        <p class="la-eyebrow">Assistance</p>
+                        <h2><t t-esc="ticket.name"/></h2>
+                        <p class="la-chat-status-line"><span class="la-chat-status" id="la-chat-status" data-online="En ligne" data-offline="Connexion..."/><span t-attf-class="la-ticket-state la-ticket-state-#{ticket.state}"><t t-esc="state_label"/></span></p>
+                    </div>
+                    <div id="la-chat" class="la-chat" t-att-data-ticket-id="ticket_id" t-att-data-ws-version="ws_version" t-att-data-token="token" t-att-data-last-id="last_id">
+                        <div class="la-chat-messages" id="la-chat-messages">
+                            <t t-foreach="messages" t-as="message">
+                                <div class="la-chat-bubble" t-attf-class="la-chat-bubble #{message.author_type == 'agent' and 'la-chat-agent' or 'la-chat-customer'}" t-att-data-msg-id="message.id">
+                                    <t t-if="message.author_type == 'agent'">
+                                        <span class="la-chat-avatar"><img src="/location_auto/static/img/LOGO.png" alt=""/></span>
+                                    </t>
+                                    <div class="la-chat-bubble-content">
+                                        <span class="la-chat-meta"><t t-esc="'SUPPORT' if message.author_type == 'agent' else 'Vous'"/></span>
+                                        <p><t t-esc="message.body"/></p>
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div class="la-chat-composer">
+                            <textarea id="la-chat-input" rows="2" placeholder="Écrivez votre message..."></textarea>
+                            <button type="button" id="la-chat-send" class="la-chat-send-btn" aria-label="Envoyer">
+                                <i class="fa fa-paper-plane"/>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="la-portal-note">Un e-mail vous est également envoyé à chaque réponse de notre équipe.</p>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="support_my_page" name="My Support Tickets">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Assistance</p>
+                        <h2>Vos demandes de support.</h2>
+                        <div class="la-inline-actions"><a href="/support" class="la-btn la-btn-primary la-btn-sm">Nouvelle demande</a></div>
+                    </div>
+                    <t t-if="tickets">
+                        <div class="la-search-wrap">
+                            <i class="fa fa-search la-search-icon"/>
+                            <input type="text" class="la-search-bar" data-search-target="#la-support-list" placeholder="Rechercher une demande..."/>
+                        </div>
+                        <ul class="la-card-table" id="la-support-list">
+                            <t t-foreach="tickets" t-as="ticket">
+                                <li class="la-ticket-row">
+                                    <a t-att-href="'/support/ticket/%d?t=%s' % (ticket.id, ticket.visitor_token)" class="la-ticket-card-link">
+                                        <strong><t t-esc="ticket.name"/></strong>
+                                        <span><t t-esc="len(ticket.message_ids)"/> message(s) · <t t-esc="ticket.create_date"/></span>
+                                    </a>
+                                </li>
+                            </t>
+                        </ul>
+                        <p class="la-search-empty" hidden="">Aucun résultat trouvé.</p>
+                    </t>
+                    <t t-else="">
+                        <p class="la-portal-note">Aucune demande pour le moment. Créez une nouvelle demande pour contacter notre équipe.</p>
+                    </t>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,1786 @@
+# Translation of location_auto to English.
+# Copyright (C) 2026 Keydrive
+# This file is distributed under the same license as the location_auto module.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: location_auto\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-11\n"
+"PO-Revision-Date: 2026-08-11\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "<i class=\"fa fa-sign-out la-avatar-menu-icon\"/>Se déconnecter"
+msgstr "<i class=\"fa fa-sign-out la-avatar-menu-icon\"/>Sign out"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "<i class=\"fa fa-user-o la-avatar-menu-icon\"/>Mon profil"
+msgstr "<i class=\"fa fa-user-o la-avatar-menu-icon\"/>My profile"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Contact"
+msgstr "Contact"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Créer mon compte"
+msgstr "Create my account"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Inspections"
+msgstr "Inspections"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Mes réservations"
+msgstr "My bookings"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Mon compte"
+msgstr "My account"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Mon profil"
+msgstr "My profile"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Portail"
+msgstr "Portal"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Processus"
+msgstr "Process"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Profil"
+msgstr "Profile"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Réserver"
+msgstr "Book"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Se connecter"
+msgstr "Sign in"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Se déconnecter"
+msgstr "Sign out"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Véhicules"
+msgstr "Vehicles"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+msgid "<span class=\"la-card-cta\">Voir le véhicule →</span>"
+msgstr "<span class=\"la-card-cta\">See the vehicle →</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+msgid "<span class=\"la-card-tag\">Véhicule</span>"
+msgstr "<span class=\"la-card-tag\">Vehicle</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+msgid "Dhs/jour"
+msgstr "MAD/day"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span class=\"la-card-tag\">Coupé</span>"
+msgstr "<span class=\"la-card-tag\">Coupe</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span class=\"la-card-tag\">Motos</span>"
+msgstr "<span class=\"la-card-tag\">Motorbikes</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span class=\"la-card-tag\">Électrique</span>"
+msgstr "<span class=\"la-card-tag\">Electric</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>Keydrive Digital</span>\n"
+"                                    <strong>Une plateforme pensée pour le conducteur</strong>"
+msgstr "<span>Keydrive Digital</span>\n"
+"                                    <strong>A platform designed for drivers</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>24/7</strong><span>Accès</span>"
+msgstr "<strong>24/7</strong><span>Access</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>100%</strong><span>Digital</span>"
+msgstr "<strong>100%</strong><span>Digital</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>&lt; 2 min</strong><span>Réservation</span>"
+msgstr "<strong>&lt; 2 min</strong><span>Booking</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>Sécurisé</strong><span>Signature</span>"
+msgstr "<strong>Secure</strong><span>Signature</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>Disponible partout</span>\n"
+"                                    <strong>Depuis votre ordinateur, tablette ou smartphone.</strong>"
+msgstr "<span>Available everywhere</span>\n"
+"                                    <strong>From your computer, tablet or smartphone.</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>100%</strong><span>Contrats signés électroniquement</span>"
+msgstr "<strong>100%</strong><span>Contracts signed electronically</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>24/7</strong><span>Accès au dossier et factures</span>"
+msgstr "<strong>24/7</strong><span>Access to file and invoices</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>76%</strong><span>Réservations confirmées en ligne</span>"
+msgstr "<strong>76%</strong><span>Bookings confirmed online</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Accès rapide aux états des lieux liés à la réservation, le contrat et le véhicule."
+msgstr "Quick access to the condition reports linked to the booking, the contract and the vehicle."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Accès sécurisé et personnalisé pour chaque client."
+msgstr "Secure, personalised access for every client."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Ahmed, agence de tourisme"
+msgstr "Ahmed, tourism agency"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Bikes &amp; scooters"
+msgstr "Bikes &amp; scooters"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Choix du véhicule, dates et statut de reservation en temps réel."
+msgstr "Vehicle choice, dates and real-time booking status."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Clients et équipes partenaires à Casablanca nous recommandent."
+msgstr "Clients and partner teams in Casablanca recommend us."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Commencer"
+msgstr "Get started"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Confiance"
+msgstr "Trust"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Confort, climatisation et intérieur raffiné pour explorer Casablanca sans compromis."
+msgstr "Comfort, air conditioning and a refined interior to explore Casablanca without compromise."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contactez-nous"
+msgstr "Contact us"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contrats signés électroniquement"
+msgstr "Contracts signed electronically"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contrats, factures et inspections disponibles à tout moment."
+msgstr "Contracts, invoices and inspections available at any time."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Créer mon compte"
+msgstr "Create my account"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "De la création du compte à la restitution du véhicule, chaque phase est suivie, documentée et accessible depuis le portail client."
+msgstr "From account creation to vehicle return, every phase is tracked, documented and accessible from the client portal."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Demandez une démonstration, créez un compte client ou prenez le contrôle de votre flotte avec une solution tout-en-un."
+msgstr "Request a demo, create a client account or take control of your fleet with an all-in-one solution."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Des véhicules choisis pour le relief marocain."
+msgstr "Vehicles chosen for Morocco’s terrain."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Documents"
+msgstr "Documents"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Documents attachés automatiquement au dossier client."
+msgstr "Documents automatically attached to the client file."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Documents clients centralisés"
+msgstr "Centralised client documents"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Départ"
+msgstr "Departure"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Flotte disponible"
+msgstr "Available fleet"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Historique"
+msgstr "History"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Inscription rapide et sécurisée avec documents requis."
+msgstr "Fast, secure sign-up with the required documents."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Inspection complète avant livraison pour garantir la transparence."
+msgstr "Full inspection before handover to guarantee transparency."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Inspection de départ, retour et historique des dommages."
+msgstr "Departure, return and damage history inspections."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Inspection de retour, photos et suivi des dommages."
+msgstr "Return inspection, photos and damage tracking."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Inspection structurée, prise de photos et état de conformité signé par le client."
+msgstr "Structured inspection, photos and a compliance report signed by the client."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Mobilité agile pour les zones urbaines et les promenades en bord de ville."
+msgstr "Agile mobility for urban areas and city-edge rides."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Mon espace"
+msgstr "My space"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Permis, identité et assurance sont automatiquement reliés au dossier."
+msgstr "Licence, ID and insurance are automatically linked to the file."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Portail client"
+msgstr "Client portal"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Processus clair"
+msgstr "Clear process"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Prêt à transformer votre location à Casablanca ?"
+msgstr "Ready to transform your rental in Casablanca?"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Retour"
+msgstr "Return"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Retour sécurisé"
+msgstr "Secure return"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Réservations, contrats et inspections dans un même tableau de bord."
+msgstr "Bookings, contracts and inspections in one dashboard."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Réserver en ligne"
+msgstr "Book online"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Réserver un véhicule"
+msgstr "Book a vehicle"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Salma, gérante de flotte"
+msgstr "Salma, fleet manager"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Se connecter"
+msgstr "Sign in"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Signature électronique simple depuis le portail."
+msgstr "Simple electronic signature from the portal."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Signatures, relevés kilométriques et niveau de carburant au moment de la prise en charge."
+msgstr "Signatures, kilometre readings and fuel level at pick-up time."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Signer le contrat"
+msgstr "Sign the contract"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Solutions propres et flexibles pour les trajets rapides autour de la médina."
+msgstr "Clean, flexible solutions for quick trips around the medina."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Suivi du kilométrage, niveau de carburant, photos et signatures client/agent à chaque étape."
+msgstr "Kilometre tracking, fuel level, photos and client/agent signatures at every step."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Suivi portail"
+msgstr "Portal follow-up"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Trottinettes"
+msgstr "Scooters"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Un espace où clients et gestionnaires travaillent ensemble."
+msgstr "A space where clients and managers work together."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Une expérience en 7 étapes, conçue pour la confiance."
+msgstr "A 7-step experience built on trust."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Une plateforme de location complète pour voitures avec contrats électroniques, états des lieux intégrés et portail client sécurisé."
+msgstr "A complete rental platform for cars with electronic contracts, built-in condition reports and a secure client portal."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Voir mes réservations"
+msgstr "View my bookings"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Voitures de tourisme"
+msgstr "Saloon cars"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Voitures de tourisme, motos de ville et trottinettes électriques, disponibles avec un processus de réservation sécurisé et une assistance dédiée à Casablanca."
+msgstr "Saloon cars, city motorbikes and electric scooters, available with a secure booking process and dedicated support in Casablanca."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "«Le portail client facilite la gestion des contrats et des factures. La signature électronique est un vrai plus.»"
+msgstr "“The client portal makes managing contracts and invoices easy. The electronic signature is a real plus.”"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "«Un parcours client clair, des véhicules impeccables et des états des lieux précis. Location Auto nous a fait gagner du temps au quotidien.»"
+msgstr "“A clear client journey, spotless vehicles and precise condition reports. Keydrive has saved us time every day.”"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Écrire au support"
+msgstr "Contact support"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "État de départ"
+msgstr "Departure condition"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "États des lieux"
+msgstr "Condition reports"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "États des lieux de départ et retour"
+msgstr "Departure and return condition reports"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Boîte de vitesse</span>"
+msgstr "<span>Gearbox</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Carburant</span>"
+msgstr "<span>Fuel</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Immatriculation</span>"
+msgstr "<span>License plate</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Places</span>"
+msgstr "<span>Seats</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Prix</span>"
+msgstr "<span>Price</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Statut</span>"
+msgstr "<span>Status</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Créer un compte"
+msgstr "Create an account"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Dhs/jour"
+msgstr "MAD/day"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "La réservation est confirmée par notre équipe après vérification des documents."
+msgstr "The booking is confirmed by our team after document verification."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Réserver ce véhicule"
+msgstr "Book this vehicle"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Sur demande"
+msgstr "On request"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Voir la flotte"
+msgstr "See the fleet"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicles
+msgid "Notre flotte"
+msgstr "Our fleet"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicles
+msgid "Voitures de tourisme, motos et trottinettes électriques, toutes disponibles avec un processus de réservation sécurisé et une assistance dédiée."
+msgstr "Saloon cars, motorbikes and electric scooters, all available with a secure booking process and dedicated support."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicles
+msgid "Véhicules de location à Casablanca."
+msgstr "Rental vehicles in Casablanca."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "<span>Casablanca, Maroc</span>"
+msgstr "<span>Casablanca, Morocco</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Accueil"
+msgstr "Home"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Assistance"
+msgstr "Support"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Contact"
+msgstr "Contact"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Contrats"
+msgstr "Contracts"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Espace client"
+msgstr "Client area"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Factures"
+msgstr "Invoices"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Inspections"
+msgstr "Inspections"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Mon profil"
+msgstr "My profile"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Navigation"
+msgstr "Navigation"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Plateforme de location automobile à Casablanca : réservation en ligne, contrats électroniques et états des lieux documentés pour chaque véhicule."
+msgstr "Car rental platform in Casablanca: online booking, electronic contracts and documented condition reports for every vehicle."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Processus"
+msgstr "Process"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Réservations"
+msgstr "Bookings"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Se connecter"
+msgstr "Sign in"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Véhicules"
+msgstr "Vehicles"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "© 2026 Keydrive. Tous droits réservés."
+msgstr "© 2026 Keydrive. All rights reserved."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+msgid "<span>Pas encore de compte ?</span>"
+msgstr "<span>No account yet?</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+msgid "Bon retour parmi nous."
+msgstr "Welcome back."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+msgid "Créer mon compte"
+msgstr "Create my account"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+msgid "Espace client"
+msgstr "Client area"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+msgid "Email"
+msgstr "Email"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+msgid "Mot de passe"
+msgstr "Password"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+msgid "Se connecter"
+msgstr "Sign in"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+msgid "vous@exemple.com"
+msgstr "you@example.com"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "<span>Vous avez déjà un compte ?</span>"
+msgstr "<span>Do you already have an account?</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Adresse"
+msgstr "Address"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Assurance"
+msgstr "Insurance"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Créer mon compte"
+msgstr "Create my account"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Créez votre compte."
+msgstr "Create your account."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Documents (facultatif)"
+msgstr "Documents (optional)"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Documents additionnels"
+msgstr "Additional documents"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Email"
+msgstr "Email"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Espace client"
+msgstr "Client area"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Mot de passe"
+msgstr "Password"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Nom complet"
+msgstr "Full name"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Numéro de permis"
+msgstr "Licence number"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Permis de conduire"
+msgstr "Driving licence"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Quelques informations et vos documents pour démarrer votre première location."
+msgstr "A few details and your documents to get started with your first rental."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Se connecter"
+msgstr "Sign in"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Téléphone"
+msgstr "Phone"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Ville"
+msgstr "City"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Commentaires"
+msgstr "Comments"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Créer la réservation"
+msgstr "Create the booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Début de location"
+msgstr "Rental start"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Fin de location"
+msgstr "Rental end"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Informations complémentaires"
+msgstr "Additional information"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Réservation"
+msgstr "Booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Réservez votre véhicule en ligne."
+msgstr "Book your vehicle online."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Sélectionnez un véhicule, choisissez vos dates et suivez votre réservation depuis votre portail."
+msgstr "Select a vehicle, choose your dates and follow your booking from your portal."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Véhicule"
+msgstr "Vehicle"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Date:"
+msgstr "Date:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Nouvelle réservation"
+msgstr "New booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Réservations en cours"
+msgstr "Current bookings"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Suivez vos locations depuis votre espace sécurisé."
+msgstr "Track your rentals from your secure space."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Véhicule:"
+msgstr "Vehicle:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Contrats"
+msgstr "Contracts"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "En attente de signature"
+msgstr "Awaiting signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Signer"
+msgstr "Sign"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Signé le"
+msgstr "Signed on"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Télécharger"
+msgstr "Download"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Vos contrats et signatures électroniques en un seul endroit."
+msgstr "Your contracts and electronic signatures in one place."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Véhicule:"
+msgstr "Vehicle:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Confirmez votre contrat directement depuis le portail avec une signature simple et sécurisée."
+msgstr "Confirm your contract directly from the portal with a simple, secure signature."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Effacer"
+msgstr "Clear"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Signature"
+msgstr "Signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Signature électronique du contrat"
+msgstr "Electronic contract signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Valider la signature"
+msgstr "Validate the signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Consultez toutes vos factures en ligne."
+msgstr "View all your invoices online."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Date:"
+msgstr "Date:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Factures"
+msgstr "Invoices"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Montant:"
+msgstr "Amount:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Affichez et confirmez vos inspections."
+msgstr "View and confirm your inspections."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Confirmer"
+msgstr "Confirm"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Date:"
+msgstr "Date:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Type:"
+msgstr "Type:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "États des lieux"
+msgstr "Condition reports"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "<select name=\"new_doc_type\" id=\"new_doc_type\">\n"
+"                                    <option value=\"license\">Permis de conduire</option>\n"
+"                                    <option value=\"id\">Pièce d'identité</option>\n"
+"                                    <option value=\"insurance\">Assurance</option>\n"
+"                                    <option value=\"other\">Autre</option>\n"
+"                                </select>"
+msgstr "<select name=\"new_doc_type\" id=\"new_doc_type\">\n"
+"                                    <option value=\"license\">Driving licence</option>\n"
+"                                    <option value=\"id\">ID card</option>\n"
+"                                    <option value=\"insurance\">Insurance</option>\n"
+"                                    <option value=\"other\">Other</option>\n"
+"                                </select>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "<span class=\"la-portal-note\">Aucun fichier joint</span>"
+msgstr "<span class=\"la-portal-note\">No attached file</span>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Adresse"
+msgstr "Address"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Ajouter le document"
+msgstr "Add the document"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Ajouter un document"
+msgstr "Add a document"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Ajoutez et gérez vos pièces et justificatifs."
+msgstr "Add and manage your documents and supporting files."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Aucun document pour le moment. Ajoutez vos permis, pièce d'identité ou assurance ci-dessous."
+msgstr "No documents yet. Add your driving licence, ID card or insurance below."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Documents"
+msgstr "Documents"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Email"
+msgstr "Email"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Enregistrer"
+msgstr "Save"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Fichier"
+msgstr "File"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Gérez vos informations personnelles."
+msgstr "Manage your personal information."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Mon profil"
+msgstr "My profile"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Nom complet"
+msgstr "Full name"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Numéro de permis"
+msgstr "Licence number"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Photo de profil"
+msgstr "Profile picture"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Remplacer"
+msgstr "Replace"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Remplacez un fichier, supprimez un document ou ajoutez-en un nouveau depuis cette page."
+msgstr "Replace a file, delete a document or add a new one from this page."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Supprimer"
+msgstr "Delete"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Type de document"
+msgstr "Document type"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Télécharger"
+msgstr "Download"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Téléphone"
+msgstr "Phone"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Ville"
+msgstr "City"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Vos coordonnées sont modifiables. Vos documents (permis, identité, assurance) peuvent être ajoutés, remplacés ou supprimés depuis votre espace."
+msgstr "Your contact details can be edited. Your documents (driving licence, ID, insurance) can be added, replaced or deleted from your space."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Accès rapide"
+msgstr "Quick access"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Assistance"
+msgstr "Support"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Contrats"
+msgstr "Contracts"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Espace client"
+msgstr "Client area"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Factures"
+msgstr "Invoices"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Inspections"
+msgstr "Inspections"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Mon profil"
+msgstr "My profile"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Réservations"
+msgstr "Bookings"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Assistance"
+msgstr "Support"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Comment pouvons-nous vous aider ?"
+msgstr "How can we help you?"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Décrivez votre demande : notre équipe vous répond en temps réel sur cette conversation."
+msgstr "Describe your request: our team answers you in real time on this conversation."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Email"
+msgstr "Email"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Ouvrir la conversation"
+msgstr "Start the conversation"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Sujet"
+msgstr "Subject"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Votre message"
+msgstr "Your message"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Vous pouvez également vous connecter pour suivre vos demandes depuis votre espace client."
+msgstr "You can also sign in to track your requests from your client area."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Assistance"
+msgstr "Support"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Envoyer"
+msgstr "Send"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Un e-mail vous est également envoyé à chaque réponse de notre équipe."
+msgstr "An email is also sent to you whenever our team replies."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Assistance"
+msgstr "Support"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Aucune demande pour le moment. Créez une nouvelle demande pour contacter notre équipe."
+msgstr "No requests yet. Create a new request to contact our team."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Nouvelle demande"
+msgstr "New request"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Retrouvez toutes vos conversations avec notre équipe et répondez directement depuis le portail."
+msgstr "Find all your conversations with our team and reply directly from the portal."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Vos demandes de support."
+msgstr "Your support requests."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "keydrive transforme chaque réservation en voyage maîtrisé."
+msgstr "Keydrive turns every booking into a controlled journey."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "nos marques"
+msgstr "our brands"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Marques disponibles."
+msgstr "Available brands."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Un parc sélectionné parmi les plus grandes marques automobiles, pensé pour tous les reliefs du royaume."
+msgstr "A fleet selected among the world's greatest car brands, designed for every terrain."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+msgid "Marque"
+msgstr "Brand"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Découvrez ce véhicule de notre flotte à Casablanca. Réservez dès maintenant et profitez d'un processus simple, sécurisé et documenté."
+msgstr "Discover this vehicle from our fleet in Casablanca. Book now and enjoy a simple, secure and documented process."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Vérifiez les détails de chaque état des lieux avant de confirmer. Toute modification par notre équipe annule votre confirmation précédente."
+msgstr "Review the details of each condition report before confirming. Any change made by our team cancels your previous confirmation."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "État des lieux de départ"
+msgstr "Departure condition report"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "État des lieux de retour"
+msgstr "Return condition report"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Confirmée le"
+msgstr "Confirmed on"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Modifiée — confirmation requise"
+msgstr "Modified — confirmation required"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "En attente de confirmation"
+msgstr "Awaiting confirmation"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Véhicule"
+msgstr "Vehicle"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Réservation"
+msgstr "Booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Contrat"
+msgstr "Contract"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Date"
+msgstr "Date"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Kilométrage départ"
+msgstr "Departure mileage"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Carburant départ"
+msgstr "Departure fuel"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Kilométrage retour"
+msgstr "Return mileage"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Carburant retour"
+msgstr "Return fuel"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Dommages existants"
+msgstr "Existing damage"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Nouveaux dommages"
+msgstr "New damage"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Observations"
+msgstr "Observations"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photos"
+msgstr "Photos"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photo d'inspection"
+msgstr "Inspection photo"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Signature client"
+msgstr "Client signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Signature agent"
+msgstr "Agent signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Non signée"
+msgstr "Not signed"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Cette inspection a été modifiée après votre confirmation. Veuillez vérifier les nouveaux détails puis confirmer à nouveau."
+msgstr "This inspection was modified after your confirmation. Please review the new details and confirm again."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Ce document n'est pas encore confirmé. Vérifiez les détails ci-dessus puis confirmez."
+msgstr "This document has not been confirmed yet. Review the details above and confirm."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Confirmer à nouveau"
+msgstr "Confirm again"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Aucune inspection pour le moment."
+msgstr "No inspections yet."
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Vos messages"
+msgstr "Your messages"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Rechercher un contrat..."
+msgstr "Search for a contract..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "<strong>Dommages existants</strong>"
+msgstr "<strong>Existing damage</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "<strong>Nouveaux dommages</strong>"
+msgstr "<strong>New damage</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Fermer"
+msgstr "Close"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photo précédente"
+msgstr "Previous photo"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photo suivante"
+msgstr "Next photo"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photos de l'inspection"
+msgstr "Inspection photos"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Rechercher une inspection..."
+msgstr "Search for an inspection..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "<strong>Paiement confirmé</strong>"
+msgstr "<strong>Payment confirmed</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Aucun moyen de paiement en ligne n'est disponible pour le moment. Veuillez réessayer plus tard ou contacter notre équipe."
+msgstr "No online payment method is currently available. Please try again later or contact our team."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Montant à payer:"
+msgstr "Amount to pay:"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Paiement"
+msgstr "Payment"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Payez votre facture en ligne."
+msgstr "Pay your invoice online."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Retour aux factures"
+msgstr "Back to invoices"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Réglez votre facture par carte bancaire de manière simple et sécurisée."
+msgstr "Pay your invoice by card simply and securely."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Télécharger le PDF"
+msgstr "Download PDF"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Votre facture"
+msgstr "Your invoice"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "a bien été réglée. Merci !"
+msgstr "has been paid. Thank you!"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Consultez et payez vos factures en ligne."
+msgstr "View and pay your invoices online."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Non payée"
+msgstr "Unpaid"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Paiement en cours"
+msgstr "Payment in progress"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Partiellement payée"
+msgstr "Partially paid"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Payer en ligne"
+msgstr "Pay online"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Payée"
+msgstr "Paid"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Rechercher une facture..."
+msgstr "Search for an invoice..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Réglez vos factures par carte bancaire directement depuis votre espace sécurisé."
+msgstr "Pay your invoices by card directly from your secure space."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Télécharger le PDF"
+msgstr "Download PDF"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "<option value=\"\">Choisissez un véhicule</option>"
+msgstr "<option value=\"\">Choose a vehicle</option>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Choisir un véhicule"
+msgstr "Choose a vehicle"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Rechercher un véhicule"
+msgstr "Search for a vehicle"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Rechercher un véhicule..."
+msgstr "Search for a vehicle..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_payment_status_page
+msgid "Le traitement de votre paiement est en cours."
+msgstr "Your payment is being processed."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_payment_status_page
+msgid "Paiement"
+msgstr "Payment"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_payment_status_page
+msgid "Statut de votre paiement"
+msgstr "Payment status"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Choisir le type de document"
+msgstr "Choose a document type"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Rechercher un type de document"
+msgstr "Search for a document type"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Rechercher un type..."
+msgstr "Search for a type..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Pièce d'identité"
+msgstr "ID card"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Annuler"
+msgstr "Cancel"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Rechercher une réservation..."
+msgstr "Search for a booking..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Client</strong>"
+msgstr "<strong>Customer</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Commentaires</strong>"
+msgstr "<strong>Comments</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Documents client</strong>"
+msgstr "<strong>Customer documents</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Durée de location</strong>"
+msgstr "<strong>Rental duration</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Début de location</strong>"
+msgstr "<strong>Rental start</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Fin de location</strong>"
+msgstr "<strong>Rental end</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Immatriculation</strong>"
+msgstr "<strong>Registration plate</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Marque / Modèle</strong>"
+msgstr "<strong>Make / Model</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Nombre d’inspections</strong>"
+msgstr "<strong>Number of inspections</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Référence du contrat</strong>"
+msgstr "<strong>Contract reference</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Référence réservation</strong>"
+msgstr "<strong>Booking reference</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Signé par le client le :</strong>"
+msgstr "<strong>Signed by the customer on:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Véhicule</strong>"
+msgstr "<strong>Vehicle</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>État du contrat</strong>"
+msgstr "<strong>Contract status</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Ce contrat couvre la location du véhicule indiqué ci-dessus pour la période indiquée. Toutes les conditions générales de location s’appliquent."
+msgstr "This contract covers the rental of the vehicle indicated above for the indicated period. All general rental terms apply."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Contrat de location"
+msgstr "Rental contract"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Document officiel de location de véhicule"
+msgstr "Official vehicle rental document"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Détails du contrat"
+msgstr "Contract details"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Signature client"
+msgstr "Customer signature"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "jours"
+msgstr "days"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Carburant:</strong>"
+msgstr "<strong>Fuel:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Client:</strong>"
+msgstr "<strong>Customer:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Contrat:</strong>"
+msgstr "<strong>Contract:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Dommages:</strong>"
+msgstr "<strong>Damage:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Kilométrage:</strong>"
+msgstr "<strong>Mileage:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Nouveaux dommages:</strong>"
+msgstr "<strong>New damage:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Réservation:</strong>"
+msgstr "<strong>Booking:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Véhicule:</strong>"
+msgstr "<strong>Vehicle:</strong>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Rechercher une demande..."
+msgstr "Search for a request..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Décrivez votre demande en quelques lignes..."
+msgstr "Describe your request in a few lines..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Ex : modifier ma réservation"
+msgstr "E.g. modify my booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "votre@email.com"
+msgstr "your@email.com"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Écrivez votre message..."
+msgstr "Type your message..."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Commentaires"
+msgstr "Comments"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Créer la réservation"
+msgstr "Create booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Début de location"
+msgstr "Rental start"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Fin de location"
+msgstr "Rental end"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Informations complémentaires"
+msgstr "Additional information"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Réservation"
+msgstr "Booking"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "<span class=\"la-select-trigger-label\">Choisissez un véhicule</span>\n                                    <i class=\"fa fa-chevron-down la-select-caret\"/>"
+msgstr "<span class=\"la-select-trigger-label\">Choose a vehicle</span>\n                                    <i class=\"fa fa-chevron-down la-select-caret\"/>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "<span class=\"la-select-trigger-label\">Choisissez un type de document</span>\n                                        <i class=\"fa fa-chevron-down la-select-caret\"/>"
+msgstr "<span class=\"la-select-trigger-label\">Choose a document type</span>\n                                        <i class=\"fa fa-chevron-down la-select-caret\"/>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "<select name=\"new_doc_type\" id=\"new_doc_type\" class=\"la-select-hidden\">\n                                        <option value=\"license\">Permis de conduire</option>\n                                        <option value=\"id\">Pièce d'identité</option>\n                                        <option value=\"insurance\">Assurance</option>\n                                        <option value=\"other\">Autre</option>\n                                    </select>"
+msgstr "<select name=\"new_doc_type\" id=\"new_doc_type\" class=\"la-select-hidden\">\n                                        <option value=\"license\">Driver's license</option>\n                                        <option value=\"id\">ID card</option>\n                                        <option value=\"insurance\">Insurance</option>\n                                        <option value=\"other\">Other</option>\n                                    </select>"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Aucun résultat trouvé."
+msgstr "No results found."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Aucun résultat trouvé."
+msgstr "No results found."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Aucun résultat trouvé."
+msgstr "No results found."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Aucun résultat trouvé."
+msgstr "No results found."
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Aucun résultat trouvé."
+msgstr "No results found."
+
+#. module: location_auto
+#: selection:location.reservation,state:0
+msgid "Brouillon"
+msgstr "Draft"
+
+#. module: location_auto
+#: selection:location.reservation,state:1
+msgid "Confirmée"
+msgstr "Confirmed"
+
+#. module: location_auto
+#: selection:location.reservation,state:2
+msgid "Annulée"
+msgstr "Cancelled"
+

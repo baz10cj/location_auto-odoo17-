@@ -1,0 +1,647 @@
+<odoo>
+    <template id="la_portal_base" name="Location Auto Portal Base">
+        <t t-call="website.layout">
+            <t t-set="no_header" t-value="True"/>
+            <div class="la-shell">
+                <section class="la-hero">
+                    <div class="la-hero-surface"></div>
+                    <div class="la-hero-nav reveal reveal-delay-1">
+                        <t t-call="location_auto.la_header"/>
+                    </div>
+                    <t t-out="0"/>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_register_page" name="Register">
+        <t t-call="website.layout">
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+            <div class="la-login-shell">
+                <div class="la-login-bg"></div>
+                <div class="la-login-top">
+                    <t t-call="location_auto.la_header"/>
+                </div>
+                <div class="la-login-stage">
+                    <div class="la-login-card la-register-card">
+                        <a href="/location-auto" class="la-login-brand">
+                            <img src="/location_auto/static/img/LOGO.png" alt="Keydrive" class="la-login-brand-img"/>
+                        </a>
+                        <p class="la-eyebrow">Espace client</p>
+                        <h2 class="la-login-title">Créez votre compte.</h2>
+                        <p class="la-login-sub">Quelques informations et vos documents pour démarrer votre première location.</p>
+                        <form method="post" enctype="multipart/form-data" class="la-login-form la-register-form">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <p class="la-login-alert" t-if="error" role="alert">
+                                <t t-esc="error"/>
+                            </p>
+                            <div class="la-register-grid">
+                                <div class="la-field-group">
+                                    <label for="reg_name">Nom complet</label>
+                                    <input type="text" name="name" id="reg_name" t-att-value="values and values.get('name')" required="required" autocomplete="name"/>
+                                </div>
+                                <div class="la-field-group">
+                                    <label for="reg_email">Email</label>
+                                    <input type="email" name="email" id="reg_email" t-att-value="values and values.get('email')" required="required" autocomplete="email"/>
+                                </div>
+                                <div class="la-field-group">
+                                    <label for="reg_password">Mot de passe</label>
+                                    <input type="password" name="password" id="reg_password" required="required" autocomplete="new-password" maxlength="4096"/>
+                                </div>
+                                <div class="la-field-group">
+                                    <label for="reg_phone">Téléphone</label>
+                                    <input type="text" name="phone" id="reg_phone" t-att-value="values and values.get('phone')" autocomplete="tel"/>
+                                </div>
+                                <div class="la-field-group">
+                                    <label for="reg_license">Numéro de permis</label>
+                                    <input type="text" name="license_number" id="reg_license" t-att-value="values and values.get('license_number')"/>
+                                </div>
+                                <div class="la-field-group">
+                                    <label for="reg_street">Adresse</label>
+                                    <input type="text" name="street" id="reg_street" t-att-value="values and values.get('street')" autocomplete="street-address"/>
+                                </div>
+                                <div class="la-field-group">
+                                    <label for="reg_city">Ville</label>
+                                    <input type="text" name="city" id="reg_city" t-att-value="values and values.get('city')"/>
+                                </div>
+                            </div>
+                            <div class="la-register-docs">
+                                <h3>Documents (facultatif)</h3>
+                                <div class="la-register-grid">
+                                    <div class="la-field-group">
+                                        <label for="reg_driving_license">Permis de conduire</label>
+                                        <input type="file" name="driving_license" id="reg_driving_license"/>
+                                    </div>
+                                    <div class="la-field-group">
+                                        <label for="reg_identity_card">Pièce d'identité</label>
+                                        <input type="file" name="identity_card" id="reg_identity_card"/>
+                                    </div>
+                                    <div class="la-field-group">
+                                        <label for="reg_insurance">Assurance</label>
+                                        <input type="file" name="insurance" id="reg_insurance"/>
+                                    </div>
+                                    <div class="la-field-group">
+                                        <label for="reg_other_documents">Documents additionnels</label>
+                                        <input type="file" name="other_documents" id="reg_other_documents"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="la-btn la-btn-primary la-login-submit">Créer mon compte</button>
+                        </form>
+                        <div class="la-login-alt">
+                            <span>Vous avez déjà un compte ?</span>
+                            <a href="/web/login" class="la-login-link">Se connecter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_new_reservation_page" name="New Reservation">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Réservation</p>
+                        <h2>Réservez votre véhicule en ligne.</h2>
+                        <p>Sélectionnez un véhicule, choisissez vos dates et suivez votre réservation depuis votre portail.</p>
+                    </div>
+                    <form method="post" class="la-portal-form">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <p class="la-login-alert" t-if="error" role="alert"><t t-esc="error"/></p>
+                        <div class="la-field-group">
+                            <label>Véhicule</label>
+                            <div class="la-select" role="combobox" aria-haspopup="listbox" aria-expanded="false">
+                                <select name="vehicle_id" class="la-select-hidden" required="1">
+                                    <option value="">Choisissez un véhicule</option>
+                                    <t t-foreach="vehicles" t-as="vehicle">
+                                        <option t-att-value="vehicle.id" t-att-selected="vehicle.id == default_vehicle_id"><t t-esc="vehicle.name"/></option>
+                                    </t>
+                                </select>
+                                <button type="button" class="la-select-trigger" aria-label="Choisir un véhicule">
+                                    <span class="la-select-trigger-label">Choisissez un véhicule</span>
+                                    <i class="fa fa-chevron-down la-select-caret"/>
+                                </button>
+                                <div class="la-select-menu" role="listbox">
+                                    <input type="text" class="la-select-search" placeholder="Rechercher un véhicule..." aria-label="Rechercher un véhicule"/>
+                                    <div class="la-select-options"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="la-field-group"><label>Début de location</label><input type="date" name="start_date" required="1" t-att-value="values and values.get('start_date') or ''"/></div>
+                        <div class="la-field-group"><label>Fin de location</label><input type="date" name="end_date" required="1" t-att-value="values and values.get('end_date') or ''"/></div>
+                        <div class="la-field-group"><label>Commentaires</label><textarea class="la-input" name="comments" placeholder="Informations complémentaires"><t t-esc="values and values.get('comments') or ''"/></textarea></div>
+                        <button type="submit" class="la-btn la-btn-primary">Créer la réservation</button>
+                    </form>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_reservations_page" name="Reservations">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Réservations en cours</p>
+                        <h2>Suivez vos locations depuis votre espace sécurisé.</h2>
+                        <div class="la-inline-actions"><a href="/my/reservations/new" class="la-btn la-btn-primary la-btn-sm">Nouvelle réservation</a></div>
+                    </div>
+                    <div class="la-search-wrap">
+                        <i class="fa fa-search la-search-icon"/>
+                        <input type="text" class="la-search-bar" data-search-target="#la-reservations-list" placeholder="Rechercher une réservation..."/>
+                    </div>
+                    <ul class="la-card-table" id="la-reservations-list">
+                        <t t-foreach="reservations" t-as="reservation">
+                            <li>
+                                <strong><t t-esc="reservation.name"/></strong>
+                                <span>Véhicule: <t t-esc="reservation.vehicle_id.name or 'N/A'"/></span><br/>
+                                <span>Date: <t t-esc="reservation.start_date"/> → <t t-esc="reservation.end_date"/></span><br/>
+                                <span class="la-status-badge"><t t-esc="reservation.get_state_label()"/></span>
+                                <div class="la-inline-actions" t-if="reservation.state in ('draft', 'confirmed') and reservation.start_date > today">
+                                    <a t-att-href="'/my/reservations/%s/cancel' % reservation.id" class="la-btn la-btn-secondary la-btn-sm">Annuler</a>
+                                </div>
+                            </li>
+                        </t>
+                    </ul>
+                    <p class="la-search-empty" hidden="">Aucun résultat trouvé.</p>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_contracts_page" name="Contracts">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Contrats</p>
+                        <h2>Vos contrats et signatures électroniques en un seul endroit.</h2>
+                    </div>
+                    <div class="la-search-wrap">
+                        <i class="fa fa-search la-search-icon"/>
+                        <input type="text" class="la-search-bar" data-search-target="#la-contracts-list" placeholder="Rechercher un contrat..."/>
+                    </div>
+                    <ul class="la-card-table" id="la-contracts-list">
+                        <t t-foreach="contracts" t-as="contract">
+                            <li>
+                                <strong><t t-esc="contract.name"/></strong>
+                                <span>Véhicule: <t t-esc="contract.vehicle_id.name or 'N/A'"/></span><br/>
+                                <span><t t-if="contract.customer_signature">Signé le <t t-esc="contract.signature_date"/></t><t t-else="">En attente de signature</t></span>
+                                <div class="la-inline-actions">
+                                    <t t-if="not contract.customer_signature"><a t-att-href="'/my/contracts/%s/sign' % contract.id" class="la-btn la-btn-secondary">Signer</a></t>
+                                    <a t-att-href="'/my/contracts/%s/download' % contract.id" class="la-btn la-btn-primary">Télécharger</a>
+                                </div>
+                            </li>
+                        </t>
+                    </ul>
+                    <p class="la-search-empty" hidden="">Aucun résultat trouvé.</p>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_contract_sign_page" name="Sign Contract">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Signature</p>
+                        <h2>Signature électronique du contrat</h2>
+                        <p>Confirmez votre contrat directement depuis le portail avec une signature simple et sécurisée.</p>
+                    </div>
+                    <div class="la-signature-board">
+                        <canvas id="signatureCanvas"></canvas>
+                    </div>
+                    <div class="la-inline-actions">
+                        <button type="button" id="clearSignature" class="la-btn la-btn-secondary">Effacer</button>
+                    </div>
+                    <form method="post" id="signForm" class="la-portal-form">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input type="hidden" name="signature" id="signatureData"/>
+                        <button type="submit" class="la-btn la-btn-primary">Valider la signature</button>
+                    </form>
+                </section>
+            </div>
+            <script type="text/javascript">
+                (function () {
+                    var canvas = document.getElementById('signatureCanvas');
+                    var clearBtn = document.getElementById('clearSignature');
+                    var signForm = document.getElementById('signForm');
+                    if (!canvas || !signForm) return;
+                    canvas.width = 900;
+                    canvas.height = 300;
+                    var ctx = canvas.getContext('2d');
+                    ctx.strokeStyle = '#f4ebdd';
+                    ctx.lineWidth = 4;
+                    ctx.lineCap = 'round';
+                    var drawing = false;
+                    function getPos(e) {
+                        var rect = canvas.getBoundingClientRect();
+                        return {
+                            x: (e.clientX - rect.left) * (canvas.width / rect.width),
+                            y: (e.clientY - rect.top) * (canvas.height / rect.height)
+                        };
+                    }
+                    canvas.addEventListener('mousedown', function (e) {
+                        drawing = true;
+                        ctx.beginPath();
+                        var p = getPos(e);
+                        ctx.moveTo(p.x, p.y);
+                        e.preventDefault();
+                    });
+                    canvas.addEventListener('mousemove', function (e) {
+                        if (!drawing) return;
+                        var p = getPos(e);
+                        ctx.lineTo(p.x, p.y);
+                        ctx.stroke();
+                    });
+                    canvas.addEventListener('mouseup', function () { drawing = false; });
+                    canvas.addEventListener('mouseleave', function () { drawing = false; });
+                    clearBtn.addEventListener('click', function () { ctx.clearRect(0, 0, canvas.width, canvas.height); });
+                    signForm.addEventListener('submit', function () {
+                        var data = canvas.toDataURL('image/png');
+                        document.getElementById('signatureData').value = data.split(',')[1];
+                    });
+                })();
+            </script>
+        </t>
+    </template>
+
+    <template id="portal_invoices_page" name="Invoices">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Factures</p>
+                        <h2>Consultez et payez vos factures en ligne.</h2>
+                        <p>Réglez vos factures par carte bancaire directement depuis votre espace sécurisé.</p>
+                    </div>
+                    <div class="la-search-wrap">
+                        <i class="fa fa-search la-search-icon"/>
+                        <input type="text" class="la-search-bar" data-search-target="#la-invoices-list" placeholder="Rechercher une facture..."/>
+                    </div>
+                    <ul class="la-card-table" id="la-invoices-list">
+                        <t t-foreach="invoices" t-as="invoice">
+                            <li>
+                                <strong><t t-esc="invoice.name"/></strong>
+                                <span>Montant: <t t-esc="invoice.amount_total"/> <t t-esc="invoice.currency_id.symbol or ''"/></span><br/>
+                                <span>Date: <t t-esc="invoice.invoice_date or invoice.date"/></span><br/>
+                                <t t-set="payment_state" t-value="invoice.payment_state"/>
+                                <span t-attf-class="la-status-badge la-status-#{payment_state}">
+                                    <t t-if="payment_state == 'paid'">Payée</t>
+                                    <t t-elif="payment_state == 'partial'">Partiellement payée</t>
+                                    <t t-elif="payment_state == 'in_payment'">Paiement en cours</t>
+                                    <t t-else="">Non payée</t>
+                                </span>
+                                <div class="la-inline-actions">
+                                    <a t-attf-href="/my/invoices/#{invoice.id}/pdf" class="la-btn la-btn-secondary la-btn-sm">Télécharger le PDF</a>
+                                    <a t-if="invoice._has_to_be_paid()" t-attf-href="/my/invoices/#{invoice.id}/pay" class="la-btn la-btn-primary la-btn-sm">Payer en ligne</a>
+                                </div>
+                            </li>
+                        </t>
+                    </ul>
+                    <p class="la-search-empty" hidden="">Aucun résultat trouvé.</p>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_invoice_pay_page" name="Pay Invoice">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Paiement</p>
+                        <h2>Payez votre facture en ligne.</h2>
+                        <p>Réglez votre facture par carte bancaire de manière simple et sécurisée.</p>
+                    </div>
+                    <div class="la-pay-invoice-card">
+                        <strong><t t-esc="invoice.name"/></strong>
+                        <span>Montant à payer: <b><t t-esc="invoice.amount_residual"/> <t t-esc="invoice.currency_id.symbol or ''"/></b></span><br/>
+                        <span>Date: <t t-esc="invoice.invoice_date or invoice.date"/></span>
+                        <div class="la-inline-actions">
+                            <a t-attf-href="/my/invoices/#{invoice.id}/pdf" class="la-btn la-btn-secondary la-btn-sm">Télécharger le PDF</a>
+                            <a href="/my/invoices" class="la-btn la-btn-secondary la-btn-sm">Retour aux factures</a>
+                        </div>
+                    </div>
+                    <t t-if="landing_tx or (not invoice._has_to_be_paid() and last_tx)">
+                        <t t-set="tx" t-value="landing_tx or last_tx"/>
+                        <div class="la-pay-status">
+                            <t t-call="payment.transaction_status"/>
+                        </div>
+                    </t>
+                    <t t-if="invoice._has_to_be_paid()">
+                        <div class="la-pay-form-card" t-if="payment_methods_sudo or tokens_sudo">
+                            <t t-set="submit_button_label" t-value="'Payer'"/>
+                            <t t-call="payment.form"/>
+                        </div>
+                        <p class="la-login-alert" t-else="">
+                            Aucun moyen de paiement en ligne n'est disponible pour le moment. Veuillez réessayer plus tard ou contacter notre équipe.
+                        </p>
+                    </t>
+                    <div class="la-pay-invoice-card la-pay-success" t-else="">
+                        <strong>Paiement confirmé</strong>
+                        <span>Votre facture <t t-esc="invoice.name"/> a bien été réglée. Merci !</span>
+                        <div class="la-inline-actions">
+                            <a href="/my/invoices" class="la-btn la-btn-primary la-btn-sm">Retour aux factures</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_payment_status_page" inherit_id="payment.payment_status">
+        <xpath expr="//t[@t-call='portal.frontend_layout']" position="replace">
+            <t t-call="location_auto.la_portal_base">
+                <div class="la-portal-grid">
+                    <t t-call="location_auto.portal_menu"/>
+                    <section class="la-portal-content reveal reveal-delay-2">
+                        <div class="la-portal-hero">
+                            <p class="la-eyebrow">Paiement</p>
+                            <h2>Statut de votre paiement</h2>
+                            <p>Le traitement de votre paiement est en cours.</p>
+                        </div>
+                        <div class="la-pay-invoice-card">
+                            <div name="o_payment_status" class="row justify-content-center my-3">
+                                <div name="o_payment_status_content" class="col-12 col-lg-8">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="portal_inspections_page" name="Inspections">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">États des lieux</p>
+                        <h2>Affichez et confirmez vos inspections.</h2>
+                        <p>Vérifiez les détails de chaque état des lieux avant de confirmer. Toute modification par notre équipe annule votre confirmation précédente.</p>
+                    </div>
+                    <div class="la-search-wrap" t-if="inspections">
+                        <i class="fa fa-search la-search-icon"/>
+                        <input type="text" class="la-search-bar" data-search-target="#la-inspections-list" data-search-row="article.la-inspection-card" placeholder="Rechercher une inspection..."/>
+                    </div>
+                    <div class="la-inspection-list" id="la-inspections-list" t-if="inspections">
+                        <t t-foreach="inspections" t-as="inspection">
+                            <t t-set="departure" t-value="inspection.type == 'departure'"/>
+                            <article class="la-inspection-card">
+                                <header class="la-inspection-head">
+                                    <div class="la-inspection-title">
+                                        <p class="la-inspection-ref"><t t-esc="inspection.name"/></p>
+                                        <h3 t-if="departure">État des lieux de départ</h3>
+                                        <h3 t-else="">État des lieux de retour</h3>
+                                    </div>
+                                    <div class="la-inspection-status">
+                                        <span class="la-inspection-badge la-badge-confirmed" t-if="inspection.customer_confirmation">Confirmée le <span t-field="inspection.confirmation_date"/></span>
+                                        <span class="la-inspection-badge la-badge-reconfirm" t-elif="inspection.needs_reconfirmation">Modifiée — confirmation requise</span>
+                                        <span class="la-inspection-badge la-badge-pending" t-else="">En attente de confirmation</span>
+                                    </div>
+                                </header>
+                                <dl class="la-inspection-grid">
+                                    <div class="la-inspection-cell"><dt>Véhicule</dt><dd><t t-esc="inspection.vehicle_id.display_name or '—'"/></dd></div>
+                                    <div class="la-inspection-cell"><dt>Réservation</dt><dd t-if="inspection.reservation_id"><t t-esc="inspection.reservation_id.name"/></dd><dd t-else="">—</dd></div>
+                                    <div class="la-inspection-cell"><dt>Contrat</dt><dd t-if="inspection.contract_id"><t t-esc="inspection.contract_id.name"/></dd><dd t-else="">—</dd></div>
+                                    <div class="la-inspection-cell"><dt>Date</dt><dd><span t-field="inspection.date"/></dd></div>
+                                    <t t-if="departure">
+                                        <div class="la-inspection-cell"><dt>Kilométrage départ</dt><dd><t t-esc="inspection.mileage_start or 0"/> km</dd></div>
+                                        <div class="la-inspection-cell"><dt>Carburant départ</dt><dd><t t-esc="inspection.fuel_start or 0"/> %</dd></div>
+                                    </t>
+                                    <t t-else="">
+                                        <div class="la-inspection-cell"><dt>Kilométrage retour</dt><dd><t t-esc="inspection.mileage_return or 0"/> km</dd></div>
+                                        <div class="la-inspection-cell"><dt>Carburant retour</dt><dd><t t-esc="inspection.fuel_return or 0"/> %</dd></div>
+                                    </t>
+                                </dl>
+                                <t t-if="inspection.existing_damage">
+                                    <div class="la-inspection-note"><strong>Dommages existants</strong><p><t t-esc="inspection.existing_damage"/></p></div>
+                                </t>
+                                <t t-if="inspection.new_damage">
+                                    <div class="la-inspection-note"><strong>Nouveaux dommages</strong><p><t t-esc="inspection.new_damage"/></p></div>
+                                </t>
+                                <t t-if="inspection.observations">
+                                    <div class="la-inspection-note"><strong>Observations</strong><p><t t-esc="inspection.observations"/></p></div>
+                                </t>
+                                <div class="la-inspection-photos" t-if="inspection.photo_ids">
+                                    <p class="la-inspection-label">Photos <span t-if="len(inspection.photo_ids) > 1">(<t t-esc="len(inspection.photo_ids)"/>)</span></p>
+                                    <div class="la-inspection-photos-grid">
+                                        <t t-foreach="inspection.portal_photo_urls()" t-as="photo_url">
+                                            <a class="la-inspection-photo-link" t-att-href="photo_url" t-att-data-full="photo_url">
+                                                <img t-att-src="photo_url" alt="Photo d'inspection" loading="lazy" class="la-inspection-photo"/>
+                                            </a>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div class="la-inspection-signatures">
+                                    <div class="la-inspection-sig">
+                                        <dt>Signature client</dt>
+                                        <dd t-if="inspection.customer_signature"><img t-attf-src="/web/image/location.etat.lieux/#{inspection.id}/customer_signature" alt="Signature client"/></dd>
+                                        <dd t-else="">Non signée</dd>
+                                    </div>
+                                    <div class="la-inspection-sig">
+                                        <dt>Signature agent</dt>
+                                        <dd t-if="inspection.agent_signature"><img t-attf-src="/web/image/location.etat.lieux/#{inspection.id}/agent_signature" alt="Signature agent"/></dd>
+                                        <dd t-else="">Non signée</dd>
+                                    </div>
+                                </div>
+                                <footer class="la-inspection-footer">
+                                    <p class="la-inspection-warning" t-if="inspection.needs_reconfirmation">Cette inspection a été modifiée après votre confirmation. Veuillez vérifier les nouveaux détails puis confirmer à nouveau.</p>
+                                    <p class="la-inspection-warning" t-elif="not inspection.customer_confirmation">Ce document n'est pas encore confirmé. Vérifiez les détails ci-dessus puis confirmez.</p>
+                                    <a t-att-href="'/my/inspections/%s/confirm' % inspection.id" class="la-btn la-btn-primary" t-if="not inspection.customer_confirmation"><t t-esc="inspection.needs_reconfirmation and 'Confirmer à nouveau' or 'Confirmer'"/></a>
+                                </footer>
+                            </article>
+                        </t>
+                        <p class="la-search-empty" hidden="">Aucun résultat trouvé.</p>
+                    </div>
+                    <div class="la-portal-empty" t-else="">
+                        <p>Aucune inspection pour le moment.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="la-lightbox" id="la-lightbox" role="dialog" aria-modal="true" aria-label="Photos de l'inspection" hidden="">
+                <button type="button" class="la-lightbox-close" aria-label="Fermer">&#215;</button>
+                <button type="button" class="la-lightbox-prev" aria-label="Photo précédente">&#8249;</button>
+                <div class="la-lightbox-stage"><img class="la-lightbox-img" src="" alt="Photo d'inspection"/></div>
+                <button type="button" class="la-lightbox-next" aria-label="Photo suivante">&#8250;</button>
+                <div class="la-lightbox-counter"></div>
+            </div>
+            <script>
+                (function () {
+                    var overlay = document.getElementById('la-lightbox');
+                    if (!overlay) return;
+                    var img = overlay.querySelector('.la-lightbox-img');
+                    var counter = overlay.querySelector('.la-lightbox-counter');
+                    var prevBtn = overlay.querySelector('.la-lightbox-prev');
+                    var nextBtn = overlay.querySelector('.la-lightbox-next');
+                    var closeBtn = overlay.querySelector('.la-lightbox-close');
+                    var items = [];
+                    var current = 0;
+
+                    function show(index) {
+                        if (!items.length) return;
+                        current = (index + items.length) % items.length;
+                        img.src = items[current];
+                        counter.textContent = (current + 1) + ' / ' + items.length;
+                        overlay.hidden = false;
+                        document.body.style.overflow = 'hidden';
+                    }
+
+                    function hide() {
+                        overlay.hidden = true;
+                        img.src = '';
+                        document.body.style.overflow = '';
+                    }
+
+                    document.addEventListener('click', function (event) {
+                        var link = event.target.closest('.la-inspection-photo-link');
+                        if (!link) return;
+                        event.preventDefault();
+                        var grid = link.closest('.la-inspection-photos-grid');
+                        items = Array.prototype.map.call(grid.querySelectorAll('.la-inspection-photo-link'), function (a) {
+                            return a.getAttribute('data-full');
+                        });
+                        show(items.indexOf(link.getAttribute('data-full')));
+                    });
+
+                    nextBtn.addEventListener('click', function () { show(current + 1); });
+                    prevBtn.addEventListener('click', function () { show(current - 1); });
+                    closeBtn.addEventListener('click', hide);
+                    overlay.addEventListener('click', function (event) {
+                        if (event.target === overlay) hide();
+                    });
+                    document.addEventListener('keydown', function (event) {
+                        if (overlay.hidden) return;
+                        if (event.key === 'Escape') hide();
+                        else if (event.key === 'ArrowRight') show(current + 1);
+                        else if (event.key === 'ArrowLeft') show(current - 1);
+                    });
+                })();
+            </script>
+        </t>
+    </template>
+
+    <template id="portal_profile_page" name="Profile">
+        <t t-call="location_auto.la_portal_base">
+            <div class="la-portal-grid">
+                <t t-call="location_auto.portal_menu"/>
+                <section class="la-portal-content reveal reveal-delay-2">
+                    <div class="la-portal-hero">
+                        <p class="la-eyebrow">Mon profil</p>
+                        <h2>Gérez vos informations personnelles.</h2>
+                        <p>Vos coordonnées sont modifiables. Vos documents (permis, identité, assurance) peuvent être ajoutés, remplacés ou supprimés depuis votre espace.</p>
+                    </div>
+                    <form method="post" class="la-portal-form">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div class="la-field-group"><label>Nom complet</label><input type="text" name="name" t-att-value="partner.name" required="1"/></div>
+                        <div class="la-field-group"><label>Email</label><input type="email" name="email" t-att-value="partner.email"/></div>
+                        <div class="la-field-group"><label>Téléphone</label><input type="text" name="phone" t-att-value="partner.phone"/></div>
+                        <div class="la-field-group"><label>Adresse</label><input type="text" name="street" t-att-value="partner.street"/></div>
+                        <div class="la-field-group"><label>Ville</label><input type="text" name="city" t-att-value="partner.city"/></div>
+                        <div class="la-field-group"><label>Numéro de permis</label><input type="text" name="license_number" t-att-value="partner.license_number"/></div>
+                        <div class="la-field-group"><label>Photo de profil</label><input type="file" name="avatar" accept="image/*"/></div>
+                        <button type="submit" class="la-btn la-btn-primary">Enregistrer</button>
+                    </form>
+
+<div class="la-portal-hero">
+                        <p class="la-eyebrow">Documents</p>
+                        <h2>Ajoutez et gérez vos pièces et justificatifs.</h2>
+                        <p>Remplacez un fichier, supprimez un document ou ajoutez-en un nouveau depuis cette page.</p>
+                        <ul class="la-card-table la-documents-list">
+                            <t t-foreach="documents" t-as="document">
+                                <li>
+                                    <t t-set="doc_label" t-value="'Autre'"/>
+                                    <t t-if="document.document_type == 'license'" t-set="doc_label" t-value="'Permis de conduire'"/>
+                                    <t t-elif="document.document_type == 'id'" t-set="doc_label" t-value="'Pièce d\'identité'"/>
+                                    <t t-elif="document.document_type == 'insurance'" t-set="doc_label" t-value="'Assurance'"/>
+                                    <span class="la-doc-type"><t t-esc="doc_label"/></span>
+                                    <strong><t t-esc="document.name"/></strong>
+                                    <div class="la-inline-actions">
+                                        <t t-if="document.attachment_id">
+                                            <a t-attf-href="/web/content/#{document.attachment_id.id}?download=true" class="la-btn la-btn-secondary la-btn-sm">Télécharger</a>
+                                        </t>
+                                        <t t-else="">
+                                            <span class="la-portal-note">Aucun fichier joint</span>
+                                        </t>
+                                        <form t-attf-action="/my/profile" method="post" enctype="multipart/form-data" class="la-doc-form">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="doc_id" t-att-value="document.id"/>
+                                            <input type="file" name="replace_doc" class="la-file-input"/>
+                                            <button type="submit" class="la-btn la-btn-secondary la-btn-sm">Remplacer</button>
+                                        </form>
+                                        <form t-attf-action="/my/profile" method="post" class="la-doc-form">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <input type="hidden" name="doc_id" t-att-value="document.id"/>
+                                            <button type="submit" name="delete_doc" value="1" class="la-btn la-btn-danger la-btn-sm">Supprimer</button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </t>
+                        </ul>
+                        <t t-if="not documents">
+                            <p class="la-portal-note">Aucun document pour le moment. Ajoutez vos permis, pièce d'identité ou assurance ci-dessous.</p>
+                        </t>
+                        <form t-attf-action="/my/profile" method="post" enctype="multipart/form-data" class="la-portal-form la-doc-add-form">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <h3>Ajouter un document</h3>
+                            <div class="la-field-group">
+                                <label for="new_doc_type">Type de document</label>
+                                <div class="la-select" role="combobox" aria-haspopup="listbox" aria-expanded="false">
+                                    <select name="new_doc_type" id="new_doc_type" class="la-select-hidden">
+                                        <option value="license">Permis de conduire</option>
+                                        <option value="id">Pièce d'identité</option>
+                                        <option value="insurance">Assurance</option>
+                                        <option value="other">Autre</option>
+                                    </select>
+                                    <button type="button" class="la-select-trigger" aria-label="Choisir le type de document">
+                                        <span class="la-select-trigger-label">Choisissez un type de document</span>
+                                        <i class="fa fa-chevron-down la-select-caret"/>
+                                    </button>
+                                    <div class="la-select-menu" role="listbox">
+                                        <input type="text" class="la-select-search" placeholder="Rechercher un type..." aria-label="Rechercher un type de document"/>
+                                        <div class="la-select-options"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="la-field-group">
+                                <label for="new_doc_file">Fichier</label>
+                                <input type="file" name="new_doc_file" id="new_doc_file" required="required"/>
+                            </div>
+                            <button type="submit" class="la-btn la-btn-primary">Ajouter le document</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="portal_menu" name="Location Auto Portal Menu">
+        <div class="la-portal-aside">
+            <div class="la-portal-card la-portal-nav-card">
+                <p class="la-eyebrow">Espace client</p>
+                <h3>Accès rapide</h3>
+                <ul class="la-portal-links">
+                    <li><a href="/my/profile">Mon profil</a></li>
+                    <li><a href="/my/reservations">Réservations</a></li>
+                    <li><a href="/my/contracts">Contrats</a></li>
+                    <li><a href="/my/inspections">Inspections</a></li>
+                    <li><a href="/my/invoices">Factures</a></li>
+                    <li><a href="/my/support">Assistance</a></li>
+                </ul>
+            </div>
+        </div>
+    </template>
+</odoo>

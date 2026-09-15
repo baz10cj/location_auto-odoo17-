@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+    <t t-name="location_auto.LaSupportConversation" owl="1">
+        <div class="la-backend-chat">
+            <div class="la-backend-chat-messages">
+                <t t-foreach="messages" t-as="msg" t-key="msg.id">
+                    <div t-attf-class="la-backend-chat-bubble #{msg.author_type === 'agent' ? 'la-backend-chat-agent' : 'la-backend-chat-customer'}">
+                        <span class="la-backend-chat-meta">
+                            <t t-esc="msg.author_name || (msg.author_type === 'agent' ? 'Support' : 'Client')"/>
+                            · <t t-esc="msg.create_date"/>
+                        </span>
+                        <p><t t-esc="msg.body"/></p>
+                    </div>
+                </t>
+                <div class="la-backend-chat-empty" t-if="loading">
+                    Chargement de la conversation...
+                </div>
+                <div class="la-backend-chat-empty" t-if="!loading and !messages.length">
+                    Aucun message pour le moment. Écrivez la première réponse.
+                </div>
+            </div>
+            <div class="la-backend-chat-composer">
+                <textarea t-ref="input" rows="2" placeholder="Écrire une réponse..." t-on-keydown="onKeydown"/>
+                <button class="btn btn-primary" t-on-click="onSend" t-att-disabled="sending">
+                    Envoyer
+                </button>
+            </div>
+        </div>
+    </t>
+    <t t-name="location_auto.SupportSystray" owl="1">
+        <div t-attf-class="o_MenuItem la-support-systray #{highlight ? 'la-support-pulse' : ''}" t-if="hasGroup" t-on-click="openInbox" title="Support inbox">
+            <a class="o-no-caret">
+                <i class="fa fa-envelope"/>
+                <span class="la-support-badge" t-if="unread > 0" t-esc="unread"/>
+            </a>
+        </div>
+    </t>
+</templates>

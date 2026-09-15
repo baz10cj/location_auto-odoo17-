@@ -1,0 +1,645 @@
+<odoo>
+    <template id="la_header" name="Keydrive Header">
+        <t t-set="la_langs" t-value="request.env['res.lang'].sudo().search([('active', '=', True)])"/>
+        <t t-set="la_cur_lang" t-value="(request.env.lang or 'en_US')[:2].upper()"/>
+        <nav class="la-site-header">
+            <a href="/location-auto" class="la-logo">
+                <img src="/location_auto/static/img/LOGO.png" alt="Keydrive" class="la-logo-img"/>
+                <span class="la-logo-text">Keydrive</span>
+            </a>
+            <div class="la-nav-links">
+                <a href="/vehicles">Véhicules</a>
+                <a href="/location-auto#process">Processus</a>
+                <t t-if="request.env.user._is_public()">
+                    <a href="/location-auto#portal">Portail</a>
+                    <a href="/location-auto#inspections">Inspections</a>
+                    <a href="/location-auto#contact">Contact</a>
+                </t>
+                <t t-else="">
+                    <a href="/my/profile">Portail</a>
+                    <a href="/my/inspections">Inspections</a>
+                    <a href="/my/support">Contact</a>
+                </t>
+            </div>
+            <div class="la-nav-actions">
+                <div class="la-lang-selector">
+                    <button type="button" class="la-lang-btn" title="Language">
+                        <i class="fa fa-globe la-lang-icon"/>
+                        <span class="la-lang-current" t-esc="la_cur_lang"/>
+                        <i class="fa fa-chevron-down la-lang-caret"/>
+                    </button>
+                    <div class="la-lang-menu">
+                        <t t-foreach="la_langs" t-as="la_lang">
+                            <a t-attf-href="/website/lang/#{la_lang.url_code}?r=#{request.httprequest.path}" class="la-lang-item"><t t-esc="la_lang.name"/></a>
+                        </t>
+                    </div>
+                </div>
+                <t t-if="request.env.user._is_public()">
+                    <a href="/web/login" class="la-btn la-btn-secondary la-btn-sm">Se connecter</a>
+                    <a href="/my/register" class="la-btn la-btn-primary la-btn-sm">Créer mon compte</a>
+                </t>
+                <t t-else="">
+                    <a href="/my/reservations/new" class="la-btn la-btn-primary la-btn-sm">Réserver</a>
+                    <button type="button" class="la-notif-btn" id="la-notif-btn" title="Vos messages" aria-label="Vos messages">
+                        <i class="fa fa-envelope-o la-notif-icon"/>
+                    </button>
+                    <t t-set="la_partner" t-value="request.env.user.partner_id"/>
+                    <div class="la-avatar-dropdown">
+                        <button type="button" class="la-avatar-link" title="Mon compte" aria-haspopup="true">
+                            <t t-if="la_partner.image_1920">
+                                <img t-attf-src="/web/image/res.users/#{request.env.user.id}/image_128" class="la-avatar" alt="Profil"/>
+                            </t>
+                            <t t-else="">
+                                <span class="la-avatar la-avatar-initials" t-esc="''.join([w[0] for w in (la_partner.name or '?').split()[:2]]).upper()"/>
+                            </t>
+                            <span class="la-avatar-name"><t t-esc="la_partner.name or request.env.user.name"/></span>
+                        </button>
+                        <div class="la-avatar-menu">
+                            <a href="/my/profile" class="la-avatar-menu-item"><i class="fa fa-user-o la-avatar-menu-icon"/>Mon profil</a>
+                            <a href="/web/session/logout?redirect=/location-auto" class="la-avatar-menu-item la-avatar-menu-item-danger"><i class="fa fa-sign-out la-avatar-menu-icon"/>Se déconnecter</a>
+                        </div>
+                    </div>
+                </t>
+            </div>
+            <button type="button" class="la-burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="la-mobile-menu">
+                <a href="/vehicles">Véhicules</a>
+                <a href="/location-auto#process">Processus</a>
+                <t t-if="request.env.user._is_public()">
+                    <a href="/location-auto#portal">Portail</a>
+                    <a href="/location-auto#inspections">Inspections</a>
+                    <a href="/location-auto#contact">Contact</a>
+                </t>
+                <t t-else="">
+                    <a href="/my/profile">Portail</a>
+                    <a href="/my/inspections">Inspections</a>
+                    <a href="/my/support">Contact</a>
+                </t>
+                <t t-if="request.env.user._is_public()">
+                    <a href="/web/login" class="la-btn la-btn-secondary la-btn-sm">Se connecter</a>
+                    <a href="/my/register" class="la-btn la-btn-primary la-btn-sm">Créer mon compte</a>
+                </t>
+                <t t-else="">
+                    <a href="/my/profile" class="la-btn la-btn-secondary la-btn-sm">Mon profil</a>
+                    <a href="/my/reservations" class="la-btn la-btn-primary la-btn-sm">Mes réservations</a>
+                    <a href="/web/session/logout?redirect=/location-auto" class="la-btn la-btn-danger la-btn-sm">Se déconnecter</a>
+                </t>
+            </div>
+        </nav>
+        <script type="text/javascript">
+            (function () {
+                var header = document.querySelector('.la-site-header');
+                if (!header) return;
+                var heroNav = header.parentNode;
+                var spacer = document.createElement('div');
+                spacer.className = 'la-nav-spacer';
+                function onScroll() {
+                    if (window.scrollY &gt; 80) {
+                        if (!header.classList.contains('la-nav-fixed')) {
+                            header.classList.add('la-nav-fixed');
+                            spacer.style.height = header.offsetHeight + 'px';
+                            header.parentNode.insertBefore(spacer, header);
+                            if (heroNav) heroNav.classList.add('la-nav-static');
+                        }
+                    } else if (header.classList.contains('la-nav-fixed')) {
+                        header.classList.remove('la-nav-fixed');
+                        if (spacer.parentNode) spacer.parentNode.removeChild(spacer);
+                        if (heroNav) heroNav.classList.remove('la-nav-static');
+                    }
+                }
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+
+                var dropdown = document.querySelector('.la-avatar-dropdown');
+                var langSel = document.querySelector('.la-lang-selector');
+                var burger = document.querySelector('.la-burger');
+                function closeMenus() {
+                    if (dropdown) dropdown.classList.remove('la-open');
+                    if (langSel) langSel.classList.remove('la-open');
+                    if (burger) {
+                        burger.classList.remove('la-burger-open');
+                        header.classList.remove('la-mobile-open');
+                    }
+                }
+                if (dropdown) {
+                    var toggle = dropdown.querySelector('.la-avatar-link');
+                    if (toggle) {
+                        toggle.addEventListener('click', function (e) {
+                            e.stopPropagation();
+                            dropdown.classList.toggle('la-open');
+                        });
+                    }
+                }
+                if (langSel) {
+                    var langBtn = langSel.querySelector('.la-lang-btn');
+                    if (langBtn) {
+                        langBtn.addEventListener('click', function (e) {
+                            e.stopPropagation();
+                            langSel.classList.toggle('la-open');
+                        });
+                    }
+                }
+                if (burger) {
+                    burger.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        var open = header.classList.toggle('la-mobile-open');
+                        burger.classList.toggle('la-burger-open', open);
+                    });
+                }
+                document.addEventListener('click', function (e) {
+                    if (dropdown &amp;&amp; !dropdown.contains(e.target)) dropdown.classList.remove('la-open');
+                    if (langSel &amp;&amp; !langSel.contains(e.target)) langSel.classList.remove('la-open');
+                    if (burger &amp;&amp; !header.contains(e.target)) closeMenus();
+                });
+
+                var notifBtn = document.getElementById('la-notif-btn');
+                if (notifBtn) {
+                    function refreshNotif() {
+                        fetch('/my/support/unread').then(function (r) {
+                            return r.json();
+                        }).then(function (data) {
+                            var n = Number(data ? data.count : 0) || 0;
+                            if (n > 0) {
+                                notifBtn.classList.add('la-notif-alert');
+                                notifBtn.title = 'Vous avez ' + n + ' nouveau(x) message(s)';
+                            } else {
+                                notifBtn.classList.remove('la-notif-alert');
+                                notifBtn.title = 'Vos messages';
+                            }
+                        }).catch(function () {});
+                    }
+                    notifBtn.addEventListener('click', function () {
+                        window.location.href = '/my/support/next';
+                    });
+                    refreshNotif();
+                    setInterval(refreshNotif, 10000);
+                }
+            })();
+        </script>
+    </template>
+
+    <template id="la_brands_group" name="Location Auto Brand Group">
+        <div class="la-brands-group">
+            <t t-foreach="la_brands" t-as="la_brand">
+                <figure class="la-brand-card">
+                    <img t-attf-src="/location_auto/static/carslogo/#{la_brand[1]}" t-att-alt="la_brand[0]" loading="lazy"/>
+                    <figcaption class="la-brand-name"><t t-esc="la_brand[0]"/></figcaption>
+                </figure>
+            </t>
+        </div>
+    </template>
+
+    <template id="la_vehicle_card" name="Location Auto Vehicle Card">
+        <article class="la-card">
+            <a t-att-href="'/vehicle/%s' % vehicle.id" class="la-card-anchor">
+                <div class="la-card-figure">
+                    <t t-if="vehicle.image_1920">
+                        <img t-attf-src="/web/image/location.vehicle/#{vehicle.id}/image_1920" alt="" onerror="this.onerror=null;this.src='/location_auto/static/img/vehicle_placeholder.svg'"/>
+                    </t>
+                    <t t-else="">
+                        <img src="/location_auto/static/img/vehicle_placeholder.svg" alt=""/>
+                    </t>
+                </div>
+                <div class="la-card-body">
+                    <span class="la-card-tag">Véhicule</span>
+                    <h3><t t-esc="vehicle.name"/></h3>
+                    <p><t t-esc="vehicle.brand or 'Marque'"/> <t t-esc="vehicle.model or ''"/></p>
+                    <span class="la-card-meta">
+                        <t t-if="vehicle.daily_rate"><strong><t t-esc="vehicle.daily_rate"/> Dhs/jour</strong></t>
+                        <t t-else=""><t t-esc="vehicle.license_plate or 'N/A'"/></t>
+                    </span>
+                    <span class="la-card-cta">Voir le véhicule →</span>
+                </div>
+            </a>
+        </article>
+    </template>
+
+    <template id="website_location_auto_homepage" name="Location Auto Homepage">
+        <t t-set="no_header" t-value="True"/>
+        <t t-call="website.layout">
+            <div class="la-shell">
+                <section class="la-hero">
+                    <div class="la-hero-bg"></div>
+                    <div class="la-hero-surface"></div>
+                    <div class="la-hero-nav reveal reveal-delay-1">
+                        <t t-call="location_auto.la_header"/>
+                    </div>
+
+                    <div class="la-hero-grid">
+                        <div class="la-hero-copy reveal reveal-delay-2">
+                            <p class="la-eyebrow">premium mobility</p>
+                            <h1>keydrive transforme chaque réservation en voyage maîtrisé.</h1>
+                            <p>Une plateforme de location complète pour voitures avec contrats électroniques, états des lieux intégrés et portail client sécurisé.</p>
+                            <div class="la-hero-actions">
+                                <t t-if="request.env.user._is_public()">
+                                    <a href="/my/register" class="la-btn la-btn-primary">Commencer</a>
+                                    <a href="/web/login" class="la-btn la-btn-secondary">Se connecter</a>
+                                </t>
+                                <t t-else="">
+                                    <a href="/my/reservations/new" class="la-btn la-btn-primary">Réserver un véhicule</a>
+                                    <a href="/my/profile" class="la-btn la-btn-secondary">Mon espace</a>
+                                </t>
+                            </div>
+                        </div>
+
+                        <div class="la-hero-panel reveal reveal-delay-3">
+                            <div class="la-panel-glow"></div>
+                            <div class="la-panel-card">
+                                <div class="la-panel-header">
+                                    <span>Keydrive Digital</span>
+                                    <strong>Une plateforme pensée pour le conducteur</strong>
+                                </div>
+                                <div class="la-panel-stats">
+                                    <div class="la-panel-stat">
+                                        <i class="fa fa-clock-o la-panel-stat-icon" aria-hidden="true"></i>
+                                        <strong>24/7</strong><span>Accès</span>
+                                    </div>
+                                    <div class="la-panel-stat">
+                                        <i class="fa fa-laptop la-panel-stat-icon" aria-hidden="true"></i>
+                                        <strong>100%</strong><span>Digital</span>
+                                    </div>
+                                    <div class="la-panel-stat">
+                                        <i class="fa fa-bolt la-panel-stat-icon" aria-hidden="true"></i>
+                                        <strong>&lt; 2 min</strong><span>Réservation</span>
+                                    </div>
+                                    <div class="la-panel-stat">
+                                        <i class="fa fa-lock la-panel-stat-icon" aria-hidden="true"></i>
+                                        <strong>Sécurisé</strong><span>Signature</span>
+                                    </div>
+                                </div>
+                                <div class="la-panel-footer">
+                                    <span>Disponible partout</span>
+                                    <strong>Depuis votre ordinateur, tablette ou smartphone.</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="brands" class="la-section la-brands reveal reveal-delay-3">
+                    <div class="la-section-header">
+                        <p class="la-eyebrow">nos marques</p>
+                        <h2>Marques disponibles.</h2>
+                        <p>Un parc sélectionné parmi les plus grandes marques automobiles, pensé pour tous les reliefs du royaume.</p>
+                    </div>
+                    <t t-set="la_brands" t-value="[('Alfa Romeo', 'alfa-romeo-logo.png'), ('Aston Martin', 'aston-martin-logo.png'), ('Audi', 'audi-logo-2016.png'), ('Bentley', 'bentley-logo.png'), ('BMW', 'bmw-logo-2020-1.png'), ('Bugatti', 'bugatti-logo.png'), ('Ferrari', 'ferrari-logo.png'), ('Ford', 'ford-logo-2017.png'), ('Honda', 'honda-logo-2000-3d.png'), ('Hyundai', 'hyundai-logo.png'), ('Jaguar', 'jaguar-logo.png'), ('Maserati', 'maserati-logo.png'), ('McLaren', 'mclaren-logo.png'), ('Mercedes-Benz', 'mercedes-benz-logo-2011.png'), ('Toyota', 'toyota-logo-2020.png'), ('Volkswagen', 'volkswagen-logo.png')]"/>
+                    <div class="la-brands-marquee">
+                        <div class="la-brands-track">
+                            <t t-call="location_auto.la_brands_group"/>
+                            <t t-call="location_auto.la_brands_group"/>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="fleet" class="la-section la-breakout reveal reveal-delay-4">
+                    <div class="la-section-header">
+                        <p class="la-eyebrow">Flotte disponible</p>
+                        <h2>Des véhicules choisis pour le relief marocain.</h2>
+                        <p>Voitures de tourisme, motos de ville et trottinettes électriques, disponibles avec un processus de réservation sécurisé et une assistance dédiée à Casablanca.</p>
+                    </div>
+                    <div class="la-cards-grid">
+                        <t t-if="vehicles">
+                            <t t-foreach="vehicles" t-as="vehicle">
+                                <t t-call="location_auto.la_vehicle_card"/>
+                            </t>
+                        </t>
+                        <t t-if="not vehicles">
+                            <article class="la-card">
+                                <div class="la-card-figure"></div>
+                                <div class="la-card-body">
+                                    <span class="la-card-tag">Coupé</span>
+                                    <h3>Voitures de tourisme</h3>
+                                    <p>Confort, climatisation et intérieur raffiné pour explorer Casablanca sans compromis.</p>
+                                </div>
+                            </article>
+                            <article class="la-card">
+                                <div class="la-card-figure"></div>
+                                <div class="la-card-body">
+                                    <span class="la-card-tag">Motos</span>
+                                    <h3>Bikes &amp; scooters</h3>
+                                    <p>Mobilité agile pour les zones urbaines et les promenades en bord de ville.</p>
+                                </div>
+                            </article>
+                            <article class="la-card">
+                                <div class="la-card-figure"></div>
+                                <div class="la-card-body">
+                                    <span class="la-card-tag">Électrique</span>
+                                    <h3>Trottinettes</h3>
+                                    <p>Solutions propres et flexibles pour les trajets rapides autour de la médina.</p>
+                                </div>
+                            </article>
+                            <article class="la-card">
+                                <div class="la-card-figure"></div>
+                                <div class="la-card-body">
+                                    <span class="la-card-tag">Électrique</span>
+                                    <h3>Trottinettes</h3>
+                                    <p>Solutions propres et flexibles pour les trajets rapides autour de la médina.</p>
+                                </div>
+                            </article>
+                        </t>
+                    </div>
+                </section>
+
+                <section id="process" class="la-section la-panel-split reveal reveal-delay-5">
+                    <div class="la-process-intro">
+                        <p class="la-eyebrow">Processus clair</p>
+                        <h2>Une expérience en 7 étapes, conçue pour la confiance.</h2>
+                        <p>De la création du compte à la restitution du véhicule, chaque phase est suivie, documentée et accessible depuis le portail client.</p>
+                    </div>
+                    <div class="la-process-timeline">
+                        <article class="la-step">
+                            <span>1</span>
+                            <h3>Créer mon compte</h3>
+                            <p>Inscription rapide et sécurisée avec documents requis.</p>
+                        </article>
+                        <article class="la-step">
+                            <span>2</span>
+                            <h3>Documents</h3>
+                            <p>Permis, identité et assurance sont automatiquement reliés au dossier.</p>
+                        </article>
+                        <article class="la-step">
+                            <span>3</span>
+                            <h3>Réserver en ligne</h3>
+                            <p>Choix du véhicule, dates et statut de reservation en temps réel.</p>
+                        </article>
+                        <article class="la-step">
+                            <span>4</span>
+                            <h3>Signer le contrat</h3>
+                            <p>Signature électronique simple depuis le portail.</p>
+                        </article>
+                        <article class="la-step">
+                            <span>5</span>
+                            <h3>État de départ</h3>
+                            <p>Inspection complète avant livraison pour garantir la transparence.</p>
+                        </article>
+                        <article class="la-step">
+                            <span>6</span>
+                            <h3>Retour sécurisé</h3>
+                            <p>Inspection de retour, photos et suivi des dommages.</p>
+                        </article>
+                        <article class="la-step">
+                            <span>7</span>
+                            <h3>Suivi portail</h3>
+                            <p>Contrats, factures et inspections disponibles à tout moment.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="portal" class="la-section la-portal-showcase reveal reveal-delay-6">
+                    <div class="la-panel-left">
+                        <p class="la-eyebrow">Portail client</p>
+                        <h2>Un espace où clients et gestionnaires travaillent ensemble.</h2>
+                        <ul class="la-feature-list">
+                            <li>Documents attachés automatiquement au dossier client.</li>
+                            <li>Réservations, contrats et inspections dans un même tableau de bord.</li>
+                            <li>Accès sécurisé et personnalisé pour chaque client.</li>
+                        </ul>
+                        <t t-if="request.env.user._is_public()">
+                            <a href="/my/register" class="la-btn la-btn-primary">Créer mon compte</a>
+                        </t>
+                        <t t-else="">
+                            <a href="/my/reservations" class="la-btn la-btn-primary">Voir mes réservations</a>
+                        </t>
+                    </div>
+                    <div class="la-panel-right">
+                        <div class="la-portal-card-glow"></div>
+                        <div class="la-portal-card">
+                            <div class="la-portal-stat"><strong>76%</strong><span>Réservations confirmées en ligne</span></div>
+                            <div class="la-portal-stat"><strong>100%</strong><span>Contrats signés électroniquement</span></div>
+                            <div class="la-portal-stat"><strong>24/7</strong><span>Accès au dossier et factures</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="inspections" class="la-section la-inspection-panel reveal reveal-delay-7">
+                    <div class="la-section-header">
+                        <p class="la-eyebrow">États des lieux</p>
+                        <h2>Inspection de départ, retour et historique des dommages.</h2>
+                        <p>Suivi du kilométrage, niveau de carburant, photos et signatures client/agent à chaque étape.</p>
+                    </div>
+                    <div class="la-inspection-grid">
+                        <article class="la-card la-card-tertiary">
+                            <h3>Départ</h3>
+                            <p>Signatures, relevés kilométriques et niveau de carburant au moment de la prise en charge.</p>
+                        </article>
+                        <article class="la-card la-card-tertiary">
+                            <h3>Retour</h3>
+                            <p>Inspection structurée, prise de photos et état de conformité signé par le client.</p>
+                        </article>
+                        <article class="la-card la-card-tertiary">
+                            <h3>Historique</h3>
+                            <p>Accès rapide aux états des lieux liés à la réservation, le contrat et le véhicule.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="testimonials" class="la-section la-testimonials reveal reveal-delay-8">
+                    <div class="la-section-header">
+                        <p class="la-eyebrow">Confiance</p>
+                        <h2>Clients et équipes partenaires à Casablanca nous recommandent.</h2>
+                    </div>
+                    <div class="la-testimonial-grid">
+                        <blockquote>
+                            <p>«Un parcours client clair, des véhicules impeccables et des états des lieux précis. Location Auto nous a fait gagner du temps au quotidien.»</p>
+                            <footer>Ahmed, agence de tourisme</footer>
+                        </blockquote>
+                        <blockquote>
+                            <p>«Le portail client facilite la gestion des contrats et des factures. La signature électronique est un vrai plus.»</p>
+                            <footer>Salma, gérante de flotte</footer>
+                        </blockquote>
+                    </div>
+                </section>
+
+                <section id="contact" class="la-section la-contact-panel reveal reveal-delay-9">
+                    <div class="la-contact-card">
+                        <p class="la-eyebrow">Contactez-nous</p>
+                        <h2>Prêt à transformer votre location à Casablanca ?</h2>
+                        <p>Demandez une démonstration, créez un compte client ou prenez le contrôle de votre flotte avec une solution tout-en-un.</p>
+                        <a href="/support" class="la-btn la-btn-primary">Écrire au support</a>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="website_vehicle_detail" name="Location Auto Vehicle Detail">
+        <t t-set="no_header" t-value="True"/>
+        <t t-call="website.layout">
+            <div class="la-shell la-detail-page">
+                <section class="la-hero">
+                    <div class="la-hero-surface"></div>
+                    <div class="la-hero-nav reveal reveal-delay-1">
+                        <t t-call="location_auto.la_header"/>
+                    </div>
+
+                    <div class="la-vehicle-detail reveal reveal-delay-2">
+                        <div class="la-vehicle-gallery">
+                            <t t-if="vehicle.image_1920">
+                                <img t-attf-src="/web/image/location.vehicle/#{vehicle.id}/image_1920" t-att-alt="vehicle.name" class="la-vehicle-photo" onerror="this.onerror=null;this.src='/location_auto/static/img/vehicle_placeholder.svg'"/>
+                            </t>
+                            <t t-else="">
+                                <img src="/location_auto/static/img/vehicle_placeholder.svg" t-att-alt="vehicle.name" class="la-vehicle-photo"/>
+                            </t>
+                        </div>
+
+                        <div class="la-vehicle-info">
+                            <p class="la-eyebrow"><t t-esc="vehicle.brand or 'Véhicule'"/> <t t-esc="vehicle.model or ''"/></p>
+                            <h1><t t-esc="vehicle.name"/></h1>
+
+                            <div class="la-vehicle-specs">
+                                <div class="la-spec"><span>Immatriculation</span><strong><t t-esc="vehicle.license_plate or 'N/A'"/></strong></div>
+                                <div class="la-spec"><span>Boîte de vitesse</span><strong><t t-esc="vehicle.gearbox or 'N/A'"/></strong></div>
+                                <div class="la-spec"><span>Places</span><strong><t t-esc="vehicle.seats or '—'"/></strong></div>
+                                <div class="la-spec"><span>Carburant</span><strong><t t-esc="vehicle.fuel_type or 'N/A'"/></strong></div>
+                                <div class="la-spec"><span>Statut</span><strong><t t-esc="vehicle.status or 'N/A'"/></strong></div>
+                                <div class="la-spec"><span>Prix</span><strong><t t-if="vehicle.daily_rate"><t t-esc="vehicle.daily_rate"/> Dhs/jour</t><t t-else="">Sur demande</t></strong></div>
+                            </div>
+
+                            <p class="la-vehicle-desc"><t t-if="vehicle.description"><t t-esc="vehicle.description"/></t><t t-else="">Découvrez ce véhicule de notre flotte à Casablanca. Réservez dès maintenant et profitez d'un processus simple, sécurisé et documenté.</t></p>
+
+                            <div class="la-hero-actions">
+                                <t t-if="request.env.user._is_public()">
+                                    <a t-attf-href="/web/login?redirect=/my/reservations/new?vehicle_id=#{vehicle.id}" class="la-btn la-btn-primary">Réserver ce véhicule</a>
+                                    <a href="/my/register" class="la-btn la-btn-secondary">Créer un compte</a>
+                                </t>
+                                <t t-else="">
+                                    <button type="button" class="la-btn la-btn-primary" data-la-booking-open="true">Réserver ce véhicule</button>
+                                    <a href="/location-auto#fleet" class="la-btn la-btn-secondary">Voir la flotte</a>
+                                </t>
+                            </div>
+                            <p class="la-vehicle-note">La réservation est confirmée par notre équipe après vérification des documents.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="la-booking-modal" id="la-booking-modal">
+                <div class="la-booking-modal-backdrop" data-la-booking-close="true"></div>
+                <div class="la-booking-modal-card">
+                    <button type="button" class="la-booking-modal-x" data-la-booking-close="true">×</button>
+                    <p class="la-eyebrow">Réservation</p>
+                    <h3>Réserver ce véhicule</h3>
+                    <div class="la-booking-modal-vehicle">
+                        <t t-if="vehicle.image_1920">
+                            <img t-attf-src="/web/image/location.vehicle/#{vehicle.id}/image_1920" alt=""/>
+                        </t>
+                        <t t-else="">
+                            <img src="/location_auto/static/img/vehicle_placeholder.svg" alt=""/>
+                        </t>
+                        <div>
+                            <strong><t t-esc="vehicle.name"/></strong>
+                            <span><t t-esc="vehicle.brand or ''"/> <t t-esc="vehicle.model or ''"/> · <t t-if="vehicle.daily_rate"><t t-esc="vehicle.daily_rate"/> Dhs/jour</t><t t-else="">Sur demande</t></span>
+                        </div>
+                    </div>
+                    <form method="post" action="/my/reservations/new" class="la-portal-form">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <input type="hidden" name="vehicle_id" t-att-value="vehicle.id"/>
+                        <div class="la-field-group"><label>Début de location</label><input type="date" name="start_date" required="required"/></div>
+                        <div class="la-field-group"><label>Fin de location</label><input type="date" name="end_date" required="required"/></div>
+                        <div class="la-field-group"><label>Commentaires</label><textarea class="la-input" name="comments" placeholder="Informations complémentaires"></textarea></div>
+                        <button type="submit" class="la-btn la-btn-primary">Créer la réservation</button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+                (function () {
+                    var modal = document.getElementById('la-booking-modal');
+                    if (!modal) return;
+                    var openers = document.querySelectorAll('[data-la-booking-open]');
+                    var closers = document.querySelectorAll('[data-la-booking-close]');
+                    function openModal() { modal.classList.add('la-open'); }
+                    function closeModal() { modal.classList.remove('la-open'); }
+                    openers.forEach(function (el) {
+                        el.addEventListener('click', openModal);
+                    });
+                    closers.forEach(function (el) {
+                        el.addEventListener('click', closeModal);
+                    });
+                    document.addEventListener('keydown', function (ev) {
+                        if (ev.key === 'Escape') closeModal();
+                    });
+                })();
+            </script>
+        </t>
+    </template>
+
+    <template id="website_vehicles" name="Location Auto Vehicles">
+        <t t-set="no_header" t-value="True"/>
+        <t t-call="website.layout">
+            <div class="la-shell">
+                <section class="la-hero">
+                    <div class="la-hero-surface"></div>
+                    <div class="la-hero-nav reveal reveal-delay-1">
+                        <t t-call="location_auto.la_header"/>
+                    </div>
+
+                    <div class="la-section-header reveal reveal-delay-2">
+                        <p class="la-eyebrow">Notre flotte</p>
+                        <h2>Véhicules de location à Casablanca.</h2>
+                        <p>Voitures de tourisme, motos et trottinettes électriques, toutes disponibles avec un processus de réservation sécurisé et une assistance dédiée.</p>
+                    </div>
+                </section>
+
+                <section class="la-section la-breakout reveal reveal-delay-3">
+                    <div class="la-cards-grid">
+                        <t t-foreach="vehicles" t-as="vehicle">
+                            <t t-call="location_auto.la_vehicle_card"/>
+                        </t>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="la_footer_replace" name="Location Auto Footer Custom" inherit_id="website.footer_custom">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer" t-ignore="true">
+                <footer class="la-footer">
+                    <div class="la-footer-grid">
+                        <div class="la-footer-brand">
+                            <a href="/location-auto" class="la-logo">
+                                <img src="/location_auto/static/img/LOGO.png" alt="Keydrive" class="la-logo-img"/>
+                                <span class="la-logo-text">Keydrive</span>
+                            </a>
+                            <p>Plateforme de location automobile à Casablanca : réservation en ligne, contrats électroniques et états des lieux documentés pour chaque véhicule.</p>
+                        </div>
+                        <div class="la-footer-col">
+                            <h4>Navigation</h4>
+                            <a href="/location-auto">Accueil</a>
+                            <a href="/vehicles">Véhicules</a>
+                            <a href="/location-auto#process">Processus</a>
+                            <a href="/location-auto#inspections">Inspections</a>
+                            <a href="/location-auto#contact">Contact</a>
+                            <a href="/support">Support</a>
+                        </div>
+                        <div class="la-footer-col">
+                            <h4>Espace client</h4>
+                            <a href="/my/profile">Mon profil</a>
+                            <a href="/my/reservations">Réservations</a>
+                            <a href="/my/contracts">Contrats</a>
+                            <a href="/my/invoices">Factures</a>
+                            <a href="/my/support">Assistance</a>
+                            <a href="/web/login">Se connecter</a>
+                        </div>
+                        <div class="la-footer-col">
+                            <h4>Contact</h4>
+                            <span>Casablanca, Maroc</span>
+                            <a href="mailto:contact@locationauto.ma">contact@locationauto.ma</a>
+                            <a href="tel:+212600000000">+212 6 00 00 00 00</a>
+                            <div class="la-footer-social">
+                                <a href="#" aria-label="Facebook"><i class="fa fa-facebook"/></a>
+                                <a href="#" aria-label="Instagram"><i class="fa fa-instagram"/></a>
+                                <a href="#" aria-label="Twitter"><i class="fa fa-twitter"/></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="la-footer-bottom">© 2026 Keydrive. Tous droits réservés.</div>
+                </footer>
+            </div>
+        </xpath>
+    </template>
+</odoo>

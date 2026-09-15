@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="stripe_sdk_assets" inherit_id="payment_stripe.sdk_assets">
+        <xpath expr="//script" position="replace">
+            <link rel="preconnect" href="https://js.stripe.com"/>
+            <link rel="preconnect" href="https://m.stripe.network" crossorigin=""/>
+            <script type="text/javascript" src="https://js.stripe.com/v3/" defer=""/>
+        </xpath>
+    </template>
+</odoo>

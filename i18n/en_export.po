@@ -1,0 +1,3006 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* location_auto
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-16 04:35+0000\n"
+"PO-Revision-Date: 2026-08-16 04:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.external_layout_keydrive
+msgid "(document name)"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid "<i class=\"fa fa-check-circle\"/> Confirmé par le client le"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid ""
+"<i class=\"fa fa-refresh\"/> L'inspection a été modifiée après confirmation "
+": le client doit confirmer à nouveau."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "<i class=\"fa fa-sign-out la-avatar-menu-icon\"/>Sign out"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "<i class=\"fa fa-user-o la-avatar-menu-icon\"/>My profile"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "<option value=\"\">Choisissez un véhicule</option>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid ""
+"<select name=\"new_doc_type\" id=\"new_doc_type\" class=\"la-select-hidden\">\n"
+"                                        <option value=\"license\">Permis de conduire</option>\n"
+"                                        <option value=\"id\">Pièce d'identité</option>\n"
+"                                        <option value=\"insurance\">Assurance</option>\n"
+"                                        <option value=\"other\">Autre</option>\n"
+"                                    </select>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+msgid "<span class=\"la-card-cta\">See the vehicle →</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span class=\"la-card-tag\">Coupe</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span class=\"la-card-tag\">Electric</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span class=\"la-card-tag\">Motorbikes</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+msgid "<span class=\"la-card-tag\">Vehicle</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "<span class=\"la-logo-text\">Keydrive</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "<span class=\"la-portal-note\">No attached file</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid ""
+"<span class=\"la-select-trigger-label\">Choisissez un type de document</span>\n"
+"                                        <i class=\"fa fa-chevron-down la-select-caret\"/>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid ""
+"<span class=\"la-select-trigger-label\">Choisissez un véhicule</span>\n"
+"                                    <i class=\"fa fa-chevron-down la-select-caret\"/>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>1</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>2</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>3</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>4</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>5</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>6</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<span>7</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "<span>Casablanca, Morocco</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "<span>Do you already have an account?</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"<span>Express booking</span>\n"
+"                                    <strong>Client portal access</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Fuel</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Gearbox</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>License plate</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+msgid "<span>No account yet?</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"<span>Premium fleet</span>\n"
+"                                    <strong>Transparent management</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Price</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Seats</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "<span>Status</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>100%</strong><span>Contracts signed electronically</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>24/7</strong><span>Access to file and invoices</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "<strong>76%</strong><span>Bookings confirmed online</span>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Carburant:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Client:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Client</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Commentaires</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Contrat:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Documents client</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "<strong>Dommages existants</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Dommages:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Durée de location</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Début de location</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Fin de location</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Immatriculation</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Kilométrage:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Marque / Modèle</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Nombre d’inspections</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Nouveaux dommages:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "<strong>Nouveaux dommages</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Observations:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "<strong>Observations</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "<strong>Paiement confirmé</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Référence du contrat</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Référence réservation</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Réservation:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Signé par le client le :</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "<strong>Véhicule:</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>Véhicule</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "<strong>État du contrat</strong>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "A 7-step experience built on trust."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"A complete rental platform for cars with electronic contracts, built-in "
+"condition reports and a secure client portal."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid ""
+"A few details and your documents to get started with your first rental."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"A fleet selected among the world's greatest car brands, designed for every "
+"terrain."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "A space where clients and managers work together."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "A support agent has replied"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "A support agent replied to your request \"%s\":"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "A user with this email already exists."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__active
+msgid "Actif"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_needaction
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_needaction
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_website__active
+msgid "Active"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_exception_decoration
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_exception_decoration
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_state
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_state
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_type_icon
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_type_icon
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Add a document"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Add and manage your documents and supporting files."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Add the document"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Additional documents"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Additional information"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Address"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_message__author_type__agent
+msgid "Agent"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Agent signature"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Agile mobility for urban areas and city-edge rides."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Ahmed, tourism agency"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.actions.act_window,help:location_auto.action_la_support_ticket
+msgid "All support tickets from your customers appear here."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Amount:"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "An email is also sent to you whenever our team replies."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_reservation_form
+msgid "Annuler"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_contract__state__cancelled
+msgid "Annulé"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_reservation__state__cancelled
+msgid "Annulée"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid "Archiver"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Archivés"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_form
+msgid "Assign to Me"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_search
+msgid "Assigned To"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__user_id
+msgid "Assigné à"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_client_document__document_type__insurance
+msgid "Assurance"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_attachment_count
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_attachment_count
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: location_auto
+#. odoo-javascript
+#: code:addons/location_auto/static/src/backend/support_conversation.xml:0
+#, python-format
+msgid "Aucun message pour le moment. Écrivez la première réponse."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid ""
+"Aucun moyen de paiement en ligne n'est disponible pour le moment. Veuillez "
+"réessayer plus tard ou contacter notre équipe."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__author_id
+msgid "Auteur"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__gearbox__automatic
+msgid "Automatique"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_client_document__document_type__other
+msgid "Autre"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Available brands."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Available fleet"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Awaiting confirmation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Awaiting signature"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__state__waiting_customer
+#, python-format
+msgid "Awaiting your reply"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__priority__0
+msgid "Basse"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Bikes &amp; scooters"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Book"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Book a vehicle"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Book online"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Book this vehicle"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Book your vehicle online."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Booking"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Bookings"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Bookings, contracts and inspections in one dashboard."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__gearbox
+msgid "Boîte de vitesse"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_contract__state__draft
+#: model:ir.model.fields.selection,name:location_auto.selection__location_etat_lieux__state__draft
+#: model:ir.model.fields.selection,name:location_auto.selection__location_reservation__state__draft
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Brouillon"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid ""
+"Car rental platform in Casablanca: online booking, electronic contracts and "
+"documented condition reports for every vehicle."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__fuel_type
+msgid "Carburant"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__fuel_start
+msgid "Carburant départ (%)"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__fuel_return
+msgid "Carburant retour (%)"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid ""
+"Ce contrat couvre la location du véhicule indiqué ci-dessus pour la période "
+"indiquée. Toutes les conditions générales de location s’appliquent."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Centralised client documents"
+msgstr ""
+
+#. module: location_auto
+#. odoo-javascript
+#: code:addons/location_auto/static/src/backend/support_conversation.xml:0
+#, python-format
+msgid "Chargement de la conversation..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Choisir le type de document"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Choisir un véhicule"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "City"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Clean, flexible solutions for quick trips around the medina."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Clear"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Clear process"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__partner_id
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__partner_id
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__customer_id
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__partner_id
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__customer_id
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_message__author_type__customer
+msgid "Client"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Client area"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Client portal"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Client signature"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Clients and partner teams in Casablanca recommend us."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_form
+msgid "Clôturer"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_contract__state__closed
+msgid "Clôturé"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"Comfort, air conditioning and a refined interior to explore Casablanca "
+"without compromise."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__comments
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Commentaires"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__reservation_comments
+msgid "Commentaires de réservation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Comments"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Condition reports"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid ""
+"Confirm your contract directly from the portal with a simple, secure "
+"signature."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__customer_confirmation
+msgid "Confirmation client"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Confirmed on"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_form
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_reservation_form
+msgid "Confirmer"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_contract__state__confirmed
+msgid "Confirmé"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_reservation__state__confirmed
+msgid "Confirmée"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Confirmés"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Consultez et payez vos factures en ligne."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_res_partner
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Contact"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contact support"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contact us"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Contract"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.report,name:location_auto.report_contract
+msgid "Contract Report"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Contracts"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contracts signed electronically"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Contracts, invoices and inspections available at any time."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__contract_id
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__contract_id
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_form
+msgid "Contrat"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_location_contract
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Contrat de location"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_contract
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_contracts
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_tree
+msgid "Contrats"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__message_ids
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_form
+msgid "Conversation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Create an account"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Create my account"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Create the booking"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Create your account."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__create_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__create_date
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__create_date
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__create_date
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__create_date
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__create_date
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__create_date
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__create_date
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Créer la réservation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Current bookings"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__date
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Date"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__confirmation_date
+msgid "Date confirmation"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__start_date
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__start_date
+msgid "Date de début"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__end_date
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__end_date
+msgid "Date de fin"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__signature_date
+msgid "Date de signature"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Date:"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Delete"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__ticket_id
+msgid "Demande"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Departure"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Departure and return condition reports"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Departure condition"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Departure fuel"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Departure mileage"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Departure, return and damage history inspections."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid ""
+"Describe your request: our team answers you in real time on this "
+"conversation."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__description
+msgid "Description"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__fuel_type__diesel
+msgid "Diesel"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid ""
+"Discover this vehicle from our fleet in Casablanca. Book now and enjoy a "
+"simple, secure and documented process."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__display_name
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__display_name
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__display_name
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__display_name
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__display_name
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__display_name
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__display_name
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__status__available
+msgid "Disponible"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_location_client_document
+#: model_terms:ir.ui.view,arch_db:location_auto.view_form_client_document
+msgid "Document client"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Document officiel de location de véhicule"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Document type"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_res_partner__documents_count
+#: model:ir.model.fields,field_description:location_auto.field_res_users__documents_count
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.view_res_partner_form_inherit_location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Documents"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Documents (optional)"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Documents automatically attached to the client file."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_form
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_vehicle_form
+#: model_terms:ir.ui.view,arch_db:location_auto.view_res_partner_form_inherit_location_auto
+msgid "Documents client"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_client_document
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_documents
+#: model_terms:ir.ui.view,arch_db:location_auto.view_tree_client_document
+msgid "Documents clients"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__existing_damage
+msgid "Dommages existants"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_search
+msgid "Done"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Download"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Driving licence"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__rental_duration
+msgid "Durée de location (jours)"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Début de location"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Décrivez votre demande en quelques lignes..."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_etat_lieux__type__departure
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Départ"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_etat_lieux_departure
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_etat_lieux_departures
+msgid "Départs"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Détails du contrat"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Electronic contract signature"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__email
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Email"
+msgstr ""
+
+#. module: location_auto
+#. odoo-javascript
+#: code:addons/location_auto/static/src/backend/support_conversation.xml:0
+#, python-format
+msgid "Envoyer"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__fuel_type__petrol
+msgid "Essence"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Ex : modifier ma réservation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Facebook"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__invoice_id
+msgid "Facture"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Fast, secure sign-up with the required documents."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Fermer"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "File"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Fin de location"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_follower_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_follower_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_partner_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_partner_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__activity_type_icon
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__activity_type_icon
+#: model:ir.model.fields,help:location_auto.field_location_reservation__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"From account creation to vehicle return, every phase is tracked, documented "
+"and accessible from the client portal."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Full inspection before handover to guarantee transparency."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Full name"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Get started"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_search
+msgid "Group By"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__has_message
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__has_message
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__priority__2
+msgid "Haute"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid ""
+"Hello %s,<br/>Your reservation <b>%s</b> has been automatically cancelled "
+"because the vehicle <b>%s</b> has been booked by another customer for the "
+"same period (from %s to %s)."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "History"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Home"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "How can we help you?"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__fuel_type__hybrid
+msgid "Hybride"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__id
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__id
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__id
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__id
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__id
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__id
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__id
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__id
+msgid "ID"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_exception_icon
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_exception_icon
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__activity_exception_icon
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__activity_exception_icon
+#: model:ir.model.fields,help:location_auto.field_location_reservation__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__message_needaction
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__message_needaction
+#: model:ir.model.fields,help:location_auto.field_location_reservation__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__message_has_error
+#: model:ir.model.fields,help:location_auto.field_location_contract__message_has_sms_error
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__message_has_error
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__message_has_sms_error
+#: model:ir.model.fields,help:location_auto.field_location_reservation__message_has_error
+#: model:ir.model.fields,help:location_auto.field_location_reservation__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__image
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__image_1920
+msgid "Image"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Informations complémentaires"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__inspection_id
+#: model_terms:ir.ui.view,arch_db:location_auto.report_inspection_template
+msgid "Inspection"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.report,name:location_auto.report_inspection
+msgid "Inspection Report"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/etat_lieux.py:0
+#, python-format
+msgid "Inspection history cannot be deleted."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Inspection photo"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_form
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_reservation_form
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_vehicle_form
+msgid "Inspections"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Instagram"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Insurance"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Invoices"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_is_follower
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_is_follower
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__visitor_token
+msgid "Jeton visiteur"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.external_layout_keydrive
+msgid "KEYDRIVE"
+msgstr ""
+
+#. module: location_auto
+#: model:website.menu,name:location_auto.location_auto_home_menu
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Keydrive"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Keydrive turns every booking into a controlled journey."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"Kilometre tracking, fuel level, photos and client/agent signatures at every "
+"step."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__mileage_start
+msgid "Kilométrage départ"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__mileage_return
+msgid "Kilométrage retour"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/etat_lieux.py:0
+#, python-format
+msgid ""
+"L'état des lieux a été modifié : la confirmation du client a été "
+"réinitialisée. Le client doit confirmer à nouveau."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Language"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__write_uid
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__write_date
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__write_date
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__write_date
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__write_date
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__write_date
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__write_date
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__write_date
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_payment_status_page
+msgid "Le traitement de votre paiement est en cours."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Licence number"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Licence, ID and insurance are automatically linked to the file."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "LinkedIn"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_contract_form
+msgid "Livrer le véhicule"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_root
+msgid "Location Auto"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__status__rented
+msgid "Loué"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_vehicle_card
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "MAD/day"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__status__maintenance
+msgid "Maintenance"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Manage your personal information."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__gearbox__manual
+msgid "Manuelle"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_form
+msgid "Mark as Done"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__brand
+msgid "Marque"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Menu"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__body
+msgid "Message"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_has_error
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_has_error
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__message_count
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__unread_count
+msgid "Messages non lus (agents)"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Modified — confirmation required"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__model
+msgid "Modèle"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Montant à payer:"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__my_activity_date_deadline
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__my_activity_date_deadline
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "My account"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "My bookings"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "My profile"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "My space"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Navigation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "New booking"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "New customer message"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "New request"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__state__new
+#, python-format
+msgid "New support ticket"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_date_deadline
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_date_deadline
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_summary
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_summary
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_type_id
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_type_id
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid ""
+"No documents yet. Add your driving licence, ID card or insurance below."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "No inspections yet."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "No requests yet. Create a new request to contact our team."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__name
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__name
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__name
+msgid "Nom"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__documents_count
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__documents_count
+msgid "Nombre de documents"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__inspection_count
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__inspection_count
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__inspection_count
+msgid "Nombre d’inspections"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__customer_unread
+msgid "Non lu par le client"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Non payée"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__priority__1
+msgid "Normale"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_search
+msgid "Not Done"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Not signed"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__new_damage
+msgid "Nouveaux dommages"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_needaction_counter
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_needaction_counter
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_has_error_counter
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_has_error_counter
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__message_needaction_counter
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__message_needaction_counter
+#: model:ir.model.fields,help:location_auto.field_location_reservation__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__message_has_error_counter
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__message_has_error_counter
+#: model:ir.model.fields,help:location_auto.field_location_reservation__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_res_partner__license_number
+#: model:ir.model.fields,field_description:location_auto.field_res_users__license_number
+msgid "Numéro de permis"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__observations
+msgid "Observations"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "On request"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "Open the conversation"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "Open the ticket"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicles
+msgid "Our fleet"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.external_layout_keydrive
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_payment_status_page
+msgid "Paiement"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Paiement en cours"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Partiellement payée"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Password"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Payer en ligne"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Payez votre facture en ligne."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Payée"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_client_document__document_type__license
+msgid "Permis de conduire"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Phone"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_location_inspection_photo
+msgid "Photo d’inspection"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photo précédente"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photo suivante"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__photo_ids
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photos"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Photos de l'inspection"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+msgid "Pièce d'identité"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_client_document__document_type__id
+msgid "Pièce d’identité"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__attachment_id
+msgid "Pièce jointe"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__seats
+msgid "Places"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__license_plate
+msgid "Plaque"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "Please choose a file to upload."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Please enter a subject."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Please enter your email address."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "Please fill in your name, email and password."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "Please select a vehicle and your rental dates."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "Please sign the contract before submitting."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Please write a message."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Portal"
+msgstr ""
+
+#. module: location_auto
+#: model:res.groups,name:location_auto.group_location_portal_customer
+msgid "Portal Customer"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Portal follow-up"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__priority
+msgid "Priorité"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__daily_rate
+msgid "Prix journalier (Dhs)"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Process"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Profile"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Profile picture"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+msgid "Quick access"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"Quick access to the condition reports linked to the booking, the contract "
+"and the vehicle."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Ready to transform your rental in Casablanca?"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Rechercher un contrat..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Rechercher un type de document"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Rechercher un type..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Rechercher un véhicule"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Rechercher un véhicule..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Rechercher une demande..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Rechercher une facture..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Rechercher une inspection..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Rechercher une réservation..."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__needs_reconfirmation
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Reconfirmation requise"
+msgstr ""
+
+#. module: location_auto
+#: model:res.groups,name:location_auto.group_location_manager
+msgid "Rental Manager"
+msgstr ""
+
+#. module: location_auto
+#: model:res.groups,name:location_auto.group_location_user
+msgid "Rental User"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Rental end"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Rental start"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicles
+msgid "Rental vehicles in Casablanca."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_form
+msgid "Reopen"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Replace"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Replace a file, delete a document or add a new one from this page."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"Request a demo, create a client account or take control of your fleet with "
+"an all-in-one solution."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__activity_user_id
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__activity_user_id
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid "Restaurer"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_etat_lieux__type__return
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Retour"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Retour aux factures"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid "Retour brouillon"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_etat_lieux_return
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_etat_lieux_returns
+msgid "Retours"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Return"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Return fuel"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Return inspection, photos and damage tracking."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "Return mileage"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid ""
+"Review the details of each condition report before confirming. Any change "
+"made by our team cancels your previous confirmation."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__name
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__name
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__name
+msgid "Référence"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid ""
+"Réglez vos factures par carte bancaire directement depuis votre espace "
+"sécurisé."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid ""
+"Réglez votre facture par carte bancaire de manière simple et sécurisée."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid "Réinitialiser la confirmation client"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_location_reservation
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__reservation_id
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__reservation_id
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_reservation_form
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "Réservation"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_reservation
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_reservations
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_reservation_tree
+msgid "Réservations"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__message_has_sms_error
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__message_has_sms_error
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Salma, fleet manager"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Saloon cars"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"Saloon cars, city motorbikes and electric scooters, available with a secure "
+"booking process and dedicated support in Casablanca."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicles
+msgid ""
+"Saloon cars, motorbikes and electric scooters, all available with a secure "
+"booking process and dedicated support."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid "Save"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Scooters"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Secure return"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Secure, personalised access for every client."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "See the fleet"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid ""
+"Select a vehicle, choose your dates and follow your booking from your "
+"portal."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Send"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Sign"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_register_page
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Sign in"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Sign out"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Sign the contract"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Signature"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__agent_signature
+msgid "Signature agent"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__customer_signature
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__customer_signature
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "Signature client"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Signatures, kilometre readings and fuel level at pick-up time."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Signed on"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Simple electronic signature from the portal."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Start the conversation"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_search
+msgid "Status"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__activity_state
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__activity_state
+#: model:ir.model.fields,help:location_auto.field_location_reservation__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__status
+msgid "Statut"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_payment_status_page
+msgid "Statut de votre paiement"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"Structured inspection, photos and a compliance report signed by the client."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Subject"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_form
+msgid "Subject..."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__name
+msgid "Sujet"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.ui.menu,name:location_auto.menu_la_support_root
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_menu
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Support"
+msgstr ""
+
+#. module: location_auto
+#: model:res.groups,name:location_auto.group_support_agent
+msgid "Support Agent"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_la_support_message
+msgid "Support Message"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_la_support_ticket
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_form
+msgid "Support Ticket"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_la_support_ticket
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_search
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_support_ticket_tree
+msgid "Support Tickets"
+msgstr ""
+
+#. module: location_auto
+#. odoo-javascript
+#: code:addons/location_auto/static/src/backend/support_conversation.xml:0
+#, python-format
+msgid "Support inbox"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__state__done
+#, python-format
+msgid "Support ticket closed"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#: model:ir.model.fields.selection,name:location_auto.selection__la_support_ticket__state__in_progress
+#, python-format
+msgid "Support ticket in progress"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.external_layout_keydrive
+msgid "Tax ID"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_vehicle_detail
+msgid "The booking is confirmed by our team after document verification."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "The customer wrote a new message on the ticket \"%s\":"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "The end date must be after or equal to the start date."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "The message content is empty."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "The message is empty."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "The password must not contain spaces."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "The reservation was cancelled by the customer."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/support.py:0
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "This conversation is not accessible."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid ""
+"This document has not been confirmed yet. Review the details above and "
+"confirm."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid ""
+"This inspection was modified after your confirmation. Please review the new "
+"details and confirm again."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid ""
+"This reservation was automatically cancelled: the vehicle %s has been booked"
+" by another customer from %s to %s."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "This vehicle is already booked from %s to %s for this period."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.ui.menu,name:location_auto.menu_la_support_tickets
+msgid "Tickets"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_etat_lieux
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_etat_lieux_all
+msgid "Tous les états des lieux"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Track your rentals from your secure space."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Trust"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "Twitter"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__type
+msgid "Type"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_inspection_photo__mimetype
+msgid "Type MIME"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_message__author_type
+msgid "Type d'auteur"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_client_document__document_type
+msgid "Type de document"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__activity_exception_decoration
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__activity_exception_decoration
+#: model:ir.model.fields,help:location_auto.field_location_reservation__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoices_page
+msgid "Télécharger le PDF"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.external_layout_keydrive
+msgid "US12345671"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contract_sign_page
+msgid "Validate the signature"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid "Valider"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_etat_lieux__state__validated
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "Validé"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_new_reservation_page
+msgid "Vehicle"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Vehicle choice, dates and real-time booking status."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_reservations_page
+msgid "Vehicle:"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Vehicles"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "Vehicles chosen for Morocco’s terrain."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "View and confirm your inspections."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "View my bookings"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_header
+msgid "Vos messages"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "Votre facture"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_location_vehicle
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__vehicle_id
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__vehicle_id
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__vehicle_id
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_vehicle_form
+msgid "Véhicule"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_contract__state__vehicle_delivered
+msgid "Véhicule livré"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_location_vehicle
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_vehicles
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_vehicle_tree
+msgid "Véhicules"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_website
+msgid "Website"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__website_message_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__website_message_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,help:location_auto.field_location_contract__website_message_ids
+#: model:ir.model.fields,help:location_auto.field_location_etat_lieux__website_message_ids
+#: model:ir.model.fields,help:location_auto.field_location_reservation__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.actions.act_window,name:location_auto.action_la_websites
+#: model:ir.ui.menu,name:location_auto.menu_la_websites
+#: model_terms:ir.ui.view,arch_db:location_auto.view_la_website_tree
+msgid "Websites"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_layout_override
+msgid "Welcome back."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You are not allowed to access this contract."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You are not allowed to access this inspection."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You are not allowed to access this invoice."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You are not allowed to access this reservation."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You are not allowed to manage this document."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "You can also sign in to track your requests from your client area."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid ""
+"You can no longer cancel this reservation: the rental has already started."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/contract.py:0
+#, python-format
+msgid "You cannot close the contract without a return inspection."
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/contract.py:0
+#, python-format
+msgid "You cannot deliver the vehicle without a departure inspection."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_profile_page
+msgid ""
+"Your contact details can be edited. Your documents (driving licence, ID, "
+"insurance) can be added, replaced or deleted from your space."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_contracts_page
+msgid "Your contracts and electronic signatures in one place."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "Your message"
+msgstr ""
+
+#. module: location_auto
+#. odoo-python
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "Your reservation %s has been cancelled"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "Your support requests."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_invoice_pay_page
+msgid "a bien été réglée. Merci !"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "contact@locationauto.ma"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.report_contract_template
+msgid "jours"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.portal_inspections_page
+msgid "km"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_my_page
+msgid "message(s) ·"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "our brands"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid "premium mobility"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_new_page
+msgid "votre@email.com"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.login_form_override
+msgid "you@example.com"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.la_footer_replace
+msgid "© 2026 Keydrive. All rights reserved."
+msgstr ""
+
+#. module: location_auto
+#. odoo-javascript
+#: code:addons/location_auto/static/src/backend/support_conversation.xml:0
+#, python-format
+msgid "Écrire une réponse..."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.support_ticket_page
+msgid "Écrivez votre message..."
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields.selection,name:location_auto.selection__location_vehicle__fuel_type__electric
+msgid "Électrique"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_la_support_ticket__state
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__state
+#: model:ir.model.fields,field_description:location_auto.field_location_etat_lieux__state
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__state
+msgid "État"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model,name:location_auto.model_location_etat_lieux
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_search
+msgid "État des lieux"
+msgstr ""
+
+#. module: location_auto
+#: model:ir.model.fields,field_description:location_auto.field_location_contract__inspection_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_reservation__inspection_ids
+#: model:ir.model.fields,field_description:location_auto.field_location_vehicle__inspection_ids
+#: model:ir.ui.menu,name:location_auto.menu_location_auto_etat_lieux
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_tree
+msgid "États des lieux"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.view_location_etat_lieux_form
+msgid ""
+"— toute modification des détails de l'inspection réinitialisera la "
+"confirmation."
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"“A clear client journey, spotless vehicles and precise condition reports. "
+"Keydrive has saved us time every day.”"
+msgstr ""
+
+#. module: location_auto
+#: model_terms:ir.ui.view,arch_db:location_auto.website_location_auto_homepage
+msgid ""
+"“The client portal makes managing contracts and invoices easy. The "
+"electronic signature is a real plus.”"
+msgstr ""

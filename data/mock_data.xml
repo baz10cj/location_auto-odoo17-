@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- ======================= Clients ======================= -->
+        <record id="customer_ahmed" model="res.partner">
+            <field name="name">Ahmed Benali</field>
+            <field name="email">ahmed.benali@example.com</field>
+            <field name="phone">+212 661 11 22 33</field>
+            <field name="street">12 Avenue Hassan II</field>
+            <field name="city">Casablanca</field>
+            <field name="license_number">MA-123456</field>
+        </record>
+
+        <record id="customer_marie" model="res.partner">
+            <field name="name">Marie Dupont</field>
+            <field name="email">marie.dupont@example.com</field>
+            <field name="phone">+33 6 12 34 56 78</field>
+            <field name="street">8 Rue de la Paix</field>
+            <field name="city">Paris</field>
+            <field name="license_number">FR-987654</field>
+        </record>
+
+        <record id="customer_karim" model="res.partner">
+            <field name="name">Karim El Amrani</field>
+            <field name="email">karim.elamrani@example.com</field>
+            <field name="phone">+212 662 33 44 55</field>
+            <field name="street">45 Boulevard Mohammed V</field>
+            <field name="city">Rabat</field>
+            <field name="license_number">MA-654321</field>
+        </record>
+
+        <record id="customer_sophie" model="res.partner">
+            <field name="name">Sophie Martin</field>
+            <field name="email">sophie.martin@example.com</field>
+            <field name="phone">+33 7 98 76 54 32</field>
+            <field name="street">3 Place Bellecour</field>
+            <field name="city">Lyon</field>
+            <field name="license_number">FR-246810</field>
+        </record>
+
+        <record id="customer_yassine" model="res.partner">
+            <field name="name">Yassine Haddad</field>
+            <field name="email">yassine.haddad@example.com</field>
+            <field name="phone">+212 663 77 88 99</field>
+            <field name="street">27 Rue de la Liberté</field>
+            <field name="city">Tanger</field>
+            <field name="license_number">MA-111222</field>
+        </record>
+
+        <record id="customer_leila" model="res.partner">
+            <field name="name">Leila Bouzid</field>
+            <field name="email">leila.bouzid@example.com</field>
+            <field name="phone">+216 22 33 44 55</field>
+            <field name="street">5 Avenue Habib Bourguiba</field>
+            <field name="city">Tunis</field>
+            <field name="license_number">TN-333444</field>
+        </record>
+
+        <!-- ======================= Véhicules ======================= -->
+        <record id="vehicle_clio" model="location.vehicle">
+            <field name="name">Renault Clio</field>
+            <field name="license_plate">AB-123-CD</field>
+            <field name="brand">Renault</field>
+            <field name="model">Clio 5</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_208" model="location.vehicle">
+            <field name="name">Peugeot 208</field>
+            <field name="license_plate">EF-456-GH</field>
+            <field name="brand">Peugeot</field>
+            <field name="model">208 Active</field>
+            <field name="status">rented</field>
+        </record>
+
+        <record id="vehicle_golf" model="location.vehicle">
+            <field name="name">Volkswagen Golf</field>
+            <field name="license_plate">IJ-789-KL</field>
+            <field name="brand">Volkswagen</field>
+            <field name="model">Golf 8</field>
+            <field name="status">rented</field>
+        </record>
+
+        <record id="vehicle_yaris" model="location.vehicle">
+            <field name="name">Toyota Yaris</field>
+            <field name="license_plate">MN-012-OP</field>
+            <field name="brand">Toyota</field>
+            <field name="model">Yaris Hybrid</field>
+            <field name="status">available</field>
+        </record>
+
+        <record id="vehicle_bmw" model="location.vehicle">
+            <field name="name">BMW Série 3</field>
+            <field name="license_plate">QR-345-ST</field>
+            <field name="brand">BMW</field>
+            <field name="model">320d</field>
+            <field name="status">maintenance</field>
+        </record>
+
+        <record id="vehicle_mercedes" model="location.vehicle">
+            <field name="name">Mercedes Classe C</field>
+            <field name="license_plate">UV-678-WX</field>
+            <field name="brand">Mercedes</field>
+            <field name="model">C200</field>
+            <field name="status">available</field>
+        </record>
+
+        <!-- ======================= Réservations ======================= -->
+        <record id="reservation_1" model="location.reservation">
+            <field name="name">RES-1001</field>
+            <field name="customer_id" ref="customer_ahmed"/>
+            <field name="vehicle_id" ref="vehicle_clio"/>
+            <field name="start_date">2026-05-20</field>
+            <field name="end_date">2026-05-25</field>
+            <field name="comments">Client fidèle, première location</field>
+            <field name="state">confirmed</field>
+        </record>
+
+        <record id="reservation_2" model="location.reservation">
+            <field name="name">RES-1002</field>
+            <field name="customer_id" ref="customer_marie"/>
+            <field name="vehicle_id" ref="vehicle_208"/>
+            <field name="start_date">2026-06-02</field>
+            <field name="end_date">2026-06-09</field>
+            <field name="comments">Semaine de vacances en famille</field>
+            <field name="state">confirmed</field>
+        </record>
+
+        <record id="reservation_3" model="location.reservation">
+            <field name="name">RES-1003</field>
+            <field name="customer_id" ref="customer_karim"/>
+            <field name="vehicle_id" ref="vehicle_golf"/>
+            <field name="start_date">2026-07-10</field>
+            <field name="end_date">2026-07-17</field>
+            <field name="comments">Voyage d'affaires</field>
+            <field name="state">confirmed</field>
+        </record>
+
+        <record id="reservation_4" model="location.reservation">
+            <field name="name">RES-1004</field>
+            <field name="customer_id" ref="customer_sophie"/>
+            <field name="vehicle_id" ref="vehicle_yaris"/>
+            <field name="start_date">2026-08-15</field>
+            <field name="end_date">2026-08-20</field>
+            <field name="comments">En attente de validation</field>
+            <field name="state">draft</field>
+        </record>
+
+        <record id="reservation_5" model="location.reservation">
+            <field name="name">RES-1005</field>
+            <field name="customer_id" ref="customer_yassine"/>
+            <field name="vehicle_id" ref="vehicle_bmw"/>
+            <field name="start_date">2026-06-20</field>
+            <field name="end_date">2026-06-24</field>
+            <field name="comments">Annulée par le client</field>
+            <field name="state">cancelled</field>
+        </record>
+
+        <record id="reservation_6" model="location.reservation">
+            <field name="name">RES-1006</field>
+            <field name="customer_id" ref="customer_leila"/>
+            <field name="vehicle_id" ref="vehicle_mercedes"/>
+            <field name="start_date">2026-08-01</field>
+            <field name="end_date">2026-08-08</field>
+            <field name="comments">Location confirmée</field>
+            <field name="state">confirmed</field>
+        </record>
+
+        <!-- ======================= Contrats ======================= -->
+        <record id="contract_1" model="location.contract">
+            <field name="name">CT-1001</field>
+            <field name="reservation_id" ref="reservation_1"/>
+            <field name="customer_id" ref="customer_ahmed"/>
+            <field name="vehicle_id" ref="vehicle_clio"/>
+            <field name="state">closed</field>
+        </record>
+
+        <record id="contract_2" model="location.contract">
+            <field name="name">CT-1002</field>
+            <field name="reservation_id" ref="reservation_2"/>
+            <field name="customer_id" ref="customer_marie"/>
+            <field name="vehicle_id" ref="vehicle_208"/>
+            <field name="state">vehicle_delivered</field>
+        </record>
+
+        <record id="contract_3" model="location.contract">
+            <field name="name">CT-1003</field>
+            <field name="reservation_id" ref="reservation_3"/>
+            <field name="customer_id" ref="customer_karim"/>
+            <field name="vehicle_id" ref="vehicle_golf"/>
+            <field name="state">vehicle_delivered</field>
+        </record>
+
+        <record id="contract_6" model="location.contract">
+            <field name="name">CT-1006</field>
+            <field name="reservation_id" ref="reservation_6"/>
+            <field name="customer_id" ref="customer_leila"/>
+            <field name="vehicle_id" ref="vehicle_mercedes"/>
+            <field name="state">confirmed</field>
+        </record>
+
+        <!-- ======================= États des lieux ======================= -->
+        <record id="inspection_departure_1" model="location.etat.lieux">
+            <field name="name">INS-1001</field>
+            <field name="type">departure</field>
+            <field name="reservation_id" ref="reservation_1"/>
+            <field name="contract_id" ref="contract_1"/>
+            <field name="vehicle_id" ref="vehicle_clio"/>
+            <field name="partner_id" ref="customer_ahmed"/>
+            <field name="date">2026-05-20</field>
+            <field name="mileage_start">15250</field>
+            <field name="fuel_start">100</field>
+            <field name="existing_damage">Rayure légère sur la portière avant gauche, petite fissure du pare-brise côté passager.</field>
+            <field name="observations">Véhicule propre, pneus en bon état.</field>
+            <field name="state">validated</field>
+        </record>
+
+        <record id="inspection_return_1" model="location.etat.lieux">
+            <field name="name">INS-1002</field>
+            <field name="type">return</field>
+            <field name="reservation_id" ref="reservation_1"/>
+            <field name="contract_id" ref="contract_1"/>
+            <field name="vehicle_id" ref="vehicle_clio"/>
+            <field name="partner_id" ref="customer_ahmed"/>
+            <field name="date">2026-05-25</field>
+            <field name="mileage_return">15830</field>
+            <field name="fuel_return">65</field>
+            <field name="new_damage">Choc léger sur le pare-chocs arrière.</field>
+            <field name="observations">Rendu à temps, intérieur propre.</field>
+            <field name="state">validated</field>
+            <field name="customer_confirmation">True</field>
+            <field name="confirmation_date">2026-05-25</field>
+        </record>
+
+        <record id="inspection_departure_2" model="location.etat.lieux">
+            <field name="name">INS-1003</field>
+            <field name="type">departure</field>
+            <field name="reservation_id" ref="reservation_2"/>
+            <field name="contract_id" ref="contract_2"/>
+            <field name="vehicle_id" ref="vehicle_208"/>
+            <field name="partner_id" ref="customer_marie"/>
+            <field name="date">2026-06-02</field>
+            <field name="mileage_start">24500</field>
+            <field name="fuel_start">90</field>
+            <field name="existing_damage">Aucun dommage constaté.</field>
+            <field name="observations">Véhicule en parfait état.</field>
+            <field name="state">validated</field>
+        </record>
+
+        <record id="inspection_departure_3" model="location.etat.lieux">
+            <field name="name">INS-1004</field>
+            <field name="type">departure</field>
+            <field name="reservation_id" ref="reservation_3"/>
+            <field name="contract_id" ref="contract_3"/>
+            <field name="vehicle_id" ref="vehicle_golf"/>
+            <field name="partner_id" ref="customer_karim"/>
+            <field name="date">2026-07-10</field>
+            <field name="mileage_start">31200</field>
+            <field name="fuel_start">80</field>
+            <field name="existing_damage">Rayure sur le rétroviseur droit.</field>
+            <field name="observations">Réservoir plein au 80%.</field>
+            <field name="state">draft</field>
+        </record>
+
+        <record id="inspection_departure_6" model="location.etat.lieux">
+            <field name="name">INS-1005</field>
+            <field name="type">departure</field>
+            <field name="reservation_id" ref="reservation_6"/>
+            <field name="contract_id" ref="contract_6"/>
+            <field name="vehicle_id" ref="vehicle_mercedes"/>
+            <field name="partner_id" ref="customer_leila"/>
+            <field name="date">2026-08-01</field>
+            <field name="mileage_start">8900</field>
+            <field name="fuel_start">100</field>
+            <field name="existing_damage">Aucun dommage constaté.</field>
+            <field name="observations">Véhicule neuf, faible kilométrage.</field>
+            <field name="state">validated</field>
+        </record>
+
+        <!-- ======================= Documents clients ======================= -->
+        <record id="document_ahmed_license" model="location.client.document">
+            <field name="name">Permis de conduire - Ahmed Benali.pdf</field>
+            <field name="partner_id" ref="customer_ahmed"/>
+            <field name="document_type">license</field>
+        </record>
+
+        <record id="document_ahmed_id" model="location.client.document">
+            <field name="name">Carte d'identité - Ahmed Benali.pdf</field>
+            <field name="partner_id" ref="customer_ahmed"/>
+            <field name="document_type">id</field>
+        </record>
+
+        <record id="document_marie_insurance" model="location.client.document">
+            <field name="name">Attestation d'assurance - Marie Dupont.pdf</field>
+            <field name="partner_id" ref="customer_marie"/>
+            <field name="document_type">insurance</field>
+        </record>
+
+        <record id="document_karim_license" model="location.client.document">
+            <field name="name">Permis de conduire - Karim El Amrani.pdf</field>
+            <field name="partner_id" ref="customer_karim"/>
+            <field name="document_type">license</field>
+        </record>
+
+        <record id="document_sophie_other" model="location.client.document">
+            <field name="name">Justificatif de domicile - Sophie Martin.pdf</field>
+            <field name="partner_id" ref="customer_sophie"/>
+            <field name="document_type">other</field>
+        </record>
+
+        <record id="document_leila_license" model="location.client.document">
+            <field name="name">Permis de conduire - Leila Bouzid.pdf</field>
+            <field name="partner_id" ref="customer_leila"/>
+            <field name="document_type">license</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,71 @@
+<odoo>
+    <data>
+        <asset id="location_auto.frontend_css" name="Location Auto frontend styles" active="True">
+            <bundle>web.assets_frontend</bundle>
+            <path>location_auto/static/src/css/location_auto_style.css</path>
+            <field name="sequence" eval="100"/>
+        </asset>
+
+        <asset id="location_auto.support_chat_js" name="Location Auto support chat" active="True">
+            <bundle>web.assets_frontend</bundle>
+            <path>location_auto/static/src/js/support_chat.js</path>
+            <field name="sequence" eval="110"/>
+        </asset>
+
+        <asset id="location_auto.select_js" name="Location Auto searchable select" active="True">
+            <bundle>web.assets_frontend</bundle>
+            <path>location_auto/static/src/js/la_select.js</path>
+            <field name="sequence" eval="115"/>
+        </asset>
+
+        <asset id="location_auto.payment_loader_js" name="Location Auto payment loader" active="True">
+            <bundle>web.assets_frontend</bundle>
+            <path>location_auto/static/src/js/la_payment_loader.js</path>
+            <field name="sequence" eval="116"/>
+        </asset>
+
+        <asset id="location_auto.table_search_js" name="Location Auto table search" active="True">
+            <bundle>web.assets_frontend</bundle>
+            <path>location_auto/static/src/js/la_table_search.js</path>
+            <field name="sequence" eval="117"/>
+        </asset>
+
+        <asset id="location_auto.stripe_appearance_js" name="Location Auto Stripe appearance" active="True">
+            <bundle>web.assets_frontend</bundle>
+            <path>location_auto/static/src/js/stripe_appearance.js</path>
+            <field name="sequence" eval="118"/>
+        </asset>
+
+        <asset id="location_auto.support_backend_xml" name="Location Auto support backend xml" active="True">
+            <bundle>web.assets_backend</bundle>
+            <path>location_auto/static/src/backend/support_conversation.xml</path>
+            <field name="sequence" eval="110"/>
+        </asset>
+
+        <asset id="location_auto.support_backend_js" name="Location Auto support backend js" active="True">
+            <bundle>web.assets_backend</bundle>
+            <path>location_auto/static/src/backend/support_conversation.js</path>
+            <field name="sequence" eval="110"/>
+        </asset>
+
+        <asset id="location_auto.support_backend_css" name="Location Auto support backend css" active="True">
+            <bundle>web.assets_backend</bundle>
+            <path>location_auto/static/src/css/support_backend.css</path>
+            <field name="sequence" eval="110"/>
+        </asset>
+
+        <asset id="location_auto.support_systray_js" name="Location Auto support systray" active="True">
+            <bundle>web.assets_backend</bundle>
+            <path>location_auto/static/src/backend/support_systray.js</path>
+            <field name="sequence" eval="120"/>
+        </asset>
+
+        <template id="location_auto.fonts" name="Location Auto Google Fonts" inherit_id="website.layout">
+            <xpath expr="//head" position="inside">
+                <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin=""/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&amp;family=Karla:wght@400;500;600;700&amp;display=swap"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

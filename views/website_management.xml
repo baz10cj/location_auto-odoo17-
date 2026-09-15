@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_la_website_tree" model="ir.ui.view">
+        <field name="name">Location Auto Websites Tree</field>
+        <field name="model">website</field>
+        <field name="arch" type="xml">
+            <tree string="Websites">
+                <field name="name"/>
+                <field name="domain"/>
+                <field name="default_lang_id"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_la_websites" model="ir.actions.act_window">
+        <field name="name">Websites</field>
+        <field name="res_model">website</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_la_website_tree"/>
+        <field name="context">{'active_test': False}</field>
+    </record>
+
+    <menuitem id="menu_la_websites" name="Websites"
+              parent="website.menu_website_configuration" sequence="90"
+              action="action_la_websites"/>
+</odoo>

@@ -1,0 +1,30 @@
+<odoo>
+    <data noupdate="1">
+        <record id="seq_location_reservation" model="ir.sequence">
+            <field name="name">Reservation sequence</field>
+            <field name="code">location.reservation</field>
+            <field name="prefix">RES/</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record id="seq_location_contract" model="ir.sequence">
+            <field name="name">Contract sequence</field>
+            <field name="code">location.contract</field>
+            <field name="prefix">CT/</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+        <record id="seq_location_etat_lieux" model="ir.sequence">
+            <field name="name">Inspection sequence</field>
+            <field name="code">location.etat.lieux</field>
+            <field name="prefix">INS/</field>
+            <field name="padding">5</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,13 @@
+<odoo>
+    <menuitem id="menu_location_auto_root" name="Location Auto" sequence="10" web_icon="location_auto,static/description/icon.png"/>
+
+    <menuitem id="menu_location_auto_etat_lieux" name="États des lieux" parent="menu_location_auto_root" sequence="10"/>
+    <menuitem id="menu_location_auto_etat_lieux_all" name="Tous les états des lieux" parent="menu_location_auto_etat_lieux" action="action_location_etat_lieux" sequence="10"/>
+    <menuitem id="menu_location_auto_etat_lieux_departures" name="Départs" parent="menu_location_auto_etat_lieux" action="action_location_etat_lieux_departure" sequence="20"/>
+    <menuitem id="menu_location_auto_etat_lieux_returns" name="Retours" parent="menu_location_auto_etat_lieux" action="action_location_etat_lieux_return" sequence="30"/>
+
+    <menuitem id="menu_location_auto_vehicles" name="Véhicules" parent="menu_location_auto_root" action="action_location_vehicle" sequence="20"/>
+    <menuitem id="menu_location_auto_reservations" name="Réservations" parent="menu_location_auto_root" action="action_location_reservation" sequence="30"/>
+    <menuitem id="menu_location_auto_contracts" name="Contrats" parent="menu_location_auto_root" action="action_location_contract" sequence="40"/>
+    <menuitem id="menu_location_auto_documents" name="Documents clients" parent="menu_location_auto_root" action="action_location_client_document" sequence="50"/>
+</odoo>

@@ -1,0 +1,58 @@
+<odoo>
+    <record id="view_location_reservation_tree" model="ir.ui.view">
+        <field name="name">location.reservation.tree</field>
+        <field name="model">location.reservation</field>
+        <field name="arch" type="xml">
+            <tree string="Réservations">
+                <field name="name"/>
+                <field name="customer_id"/>
+                <field name="vehicle_id"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="state"/>
+                <field name="invoice_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_location_reservation_form" model="ir.ui.view">
+        <field name="name">location.reservation.form</field>
+        <field name="model">location.reservation</field>
+        <field name="arch" type="xml">
+            <form string="Réservation">
+                <header>
+                    <button name="action_confirm" string="Confirmer" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_cancel" string="Annuler" type="object" invisible="state not in ['draft', 'confirmed']"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_inspections" type="object" class="oe_stat_button" icon="fa-list">
+                            <field name="inspection_count" widget="statinfo" string="Inspections"/>
+                        </button>
+                    </div>
+                    <group>
+                        <field name="name"/>
+                        <field name="customer_id"/>
+                        <field name="vehicle_id"/>
+                        <field name="contract_id"/>
+                        <field name="invoice_id"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="comments"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_location_reservation" model="ir.actions.act_window">
+        <field name="name">Réservations</field>
+        <field name="res_model">location.reservation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

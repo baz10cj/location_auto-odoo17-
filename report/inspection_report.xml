@@ -1,0 +1,39 @@
+<odoo>
+    <record id="paperformat_inspection_report" model="report.paperformat">
+        <field name="name">Inspection Report</field>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">20</field>
+        <field name="margin_bottom">20</field>
+    </record>
+
+    <record id="report_inspection" model="ir.actions.report">
+        <field name="name">Inspection Report</field>
+        <field name="model">location.etat.lieux</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">location_auto.report_inspection_template</field>
+        <field name="report_file">location_auto.report_inspection_template</field>
+        <field name="binding_model_id" ref="model_location_etat_lieux"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="paperformat_inspection_report"/>
+    </record>
+
+    <template id="report_inspection_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="inspection">
+                <div class="page">
+                    <h2>Inspection</h2>
+                    <p><strong>Client:</strong> <span t-field="inspection.partner_id"/></p>
+                    <p><strong>Véhicule:</strong> <span t-field="inspection.vehicle_id"/></p>
+                    <p><strong>Réservation:</strong> <span t-field="inspection.reservation_id"/></p>
+                    <p><strong>Contrat:</strong> <span t-field="inspection.contract_id"/></p>
+                    <p><strong>Kilométrage:</strong> <span t-field="inspection.mileage_start"/> / <span t-field="inspection.mileage_return"/></p>
+                    <p><strong>Carburant:</strong> <span t-field="inspection.fuel_start"/> / <span t-field="inspection.fuel_return"/></p>
+                    <p><strong>Dommages:</strong> <span t-field="inspection.existing_damage"/></p>
+                    <p><strong>Nouveaux dommages:</strong> <span t-field="inspection.new_damage"/></p>
+                    <p><strong>Observations:</strong> <span t-field="inspection.observations"/></p>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

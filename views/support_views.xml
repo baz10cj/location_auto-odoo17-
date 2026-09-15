@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_la_support_ticket_tree" model="ir.ui.view">
+        <field name="name">la.support.ticket.tree</field>
+        <field name="model">la.support.ticket</field>
+        <field name="arch" type="xml">
+            <tree string="Support Tickets">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="email"/>
+                <field name="state"/>
+                <field name="priority"/>
+                <field name="user_id"/>
+                <field name="message_count"/>
+                <field name="unread_count"/>
+                <field name="create_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_la_support_ticket_form" model="ir.ui.view">
+        <field name="name">la.support.ticket.form</field>
+        <field name="model">la.support.ticket</field>
+        <field name="arch" type="xml">
+            <form string="Support Ticket">
+                <header>
+                    <button name="toggle_done" type="object" string="Mark as Done" invisible="state == 'done'"/>
+                    <button name="toggle_done" type="object" string="Reopen" invisible="state != 'done'"/>
+                    <button name="assign_to_me" type="object" string="Assign to Me"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Subject..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="email"/>
+                            <field name="create_date" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="state"/>
+                            <field name="priority"/>
+                            <field name="user_id"/>
+                        </group>
+                    </group>
+                    <field name="visitor_token" readonly="1"/>
+                    <separator string="Conversation"/>
+                    <field name="name" widget="la_support_conversation" force_save="1"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_la_support_ticket" model="ir.actions.act_window">
+        <field name="name">Support Tickets</field>
+        <field name="res_model">la.support.ticket</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{'search_default_not_done': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                All support tickets from your customers appear here.
+            </p>
+        </field>
+    </record>
+
+    <record id="view_la_support_ticket_search" model="ir.ui.view">
+        <field name="name">la.support.ticket.search</field>
+        <field name="model">la.support.ticket</field>
+        <field name="arch" type="xml">
+            <search string="Support Tickets">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="email"/>
+                <field name="state"/>
+                <filter string="Not Done" name="not_done" domain="[('state', '!=', 'done')]"/>
+                <filter string="Done" name="done" domain="[('state', '=', 'done')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="Assigned To" name="group_user" context="{'group_by': 'user_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <menuitem id="menu_la_support_root" name="Support" sequence="50" web_icon="im_livechat,static/description/icon.png" groups="location_auto.group_support_agent"/>
+    <menuitem id="menu_la_support_tickets" name="Tickets" parent="menu_la_support_root" action="action_la_support_ticket" sequence="10"/>
+</odoo>

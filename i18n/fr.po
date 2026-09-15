@@ -1,0 +1,198 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* location_auto
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-15 00:00+0000\n"
+"PO-Revision-Date: 2026-08-15 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr\n"
+
+#. module: location_auto
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "The end date must be after or equal to the start date."
+msgstr "La date de fin doit être postérieure ou égale à la date de début."
+
+#. module: location_auto
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "This vehicle is already booked from %s to %s for this period."
+msgstr "Ce véhicule est déjà réservé du %s au %s pour cette période."
+
+#. module: location_auto
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "This reservation was automatically cancelled: the vehicle %s has been booked by another customer from %s to %s."
+msgstr "Cette réservation a été annulée automatiquement : le véhicule %s a été réservé par un autre client du %s au %s."
+
+#. module: location_auto
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "Your reservation %s has been cancelled"
+msgstr "Votre réservation %s a été annulée"
+
+#. module: location_auto
+#: code:addons/location_auto/models/reservation.py:0
+#, python-format
+msgid "Hello %s,<br/>Your reservation <b>%s</b> has been automatically cancelled because the vehicle <b>%s</b> has been booked by another customer for the same period (from %s to %s)."
+msgstr "Bonjour %s,<br/>Votre réservation <b>%s</b> a été annulée automatiquement car le véhicule <b>%s</b> a été réservé par un autre client pour la même période (du %s au %s)."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "Please select a vehicle and your rental dates."
+msgstr "Veuillez sélectionner un véhicule et vos dates de location."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "The end date must be after or equal to the start date."
+msgstr "La date de fin doit être postérieure ou égale à la date de début."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "This vehicle is already booked from %s to %s for this period."
+msgstr "Ce véhicule est déjà réservé du %s au %s pour cette période."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You are not allowed to access this reservation."
+msgstr "Vous n'êtes pas autorisé à accéder à cette réservation."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "The reservation was cancelled by the customer."
+msgstr "La réservation a été annulée par le client."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+#, python-format
+msgid "You can no longer cancel this reservation: the rental has already started."
+msgstr "Vous ne pouvez plus annuler cette réservation : la location a déjà commencé."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Please enter a subject."
+msgstr "Veuillez saisir un sujet."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Please write a message."
+msgstr "Veuillez écrire un message."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Please enter your email address."
+msgstr "Veuillez saisir votre adresse email."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "This conversation is not accessible."
+msgstr "Cette conversation n'est pas accessible."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "The message is empty."
+msgstr "Le message est vide."
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "New support ticket"
+msgstr "Nouvelle demande"
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Support ticket in progress"
+msgstr "Demande en cours"
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Awaiting your reply"
+msgstr "En attente de votre réponse"
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/support.py:0
+#, python-format
+msgid "Support ticket closed"
+msgstr "Demande clôturée"
+
+#. module: location_auto
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "A support agent has replied"
+msgstr "Un agent du support a répondu"
+
+#. module: location_auto
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "A support agent replied to your request \"%s\":"
+msgstr "Un agent du support a répondu à votre demande « %s » :"
+
+#. module: location_auto
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "Open the conversation"
+msgstr "Ouvrir la conversation"
+
+#. module: location_auto
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "New customer message"
+msgstr "Nouveau message client"
+
+#. module: location_auto
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "The customer wrote a new message on the ticket \"%s\":"
+msgstr "Le client a écrit un nouveau message sur la demande « %s » :"
+
+#. module: location_auto
+#: code:addons/location_auto/models/support.py:0
+#, python-format
+msgid "Open the ticket"
+msgstr "Ouvrir la demande"
+
+#. module: location_auto
+#: selection:location_auto.models.la.support.ticket,state:0
+msgid "New support ticket"
+msgstr "Nouvelle demande"
+
+#. module: location_auto
+#: selection:location_auto.models.la.support.ticket,state:0
+msgid "Support ticket in progress"
+msgstr "Demande en cours"
+
+#. module: location_auto
+#: selection:location_auto.models.la.support.ticket,state:0
+msgid "Awaiting your reply"
+msgstr "En attente de votre réponse"
+
+#. module: location_auto
+#: selection:location_auto.models.la.support.ticket,state:0
+msgid "Support ticket closed"
+msgstr "Demande clôturée"
+
+#. module: location_auto
+#: code:addons/location_auto/controllers/portal.py:0
+msgid "You are not allowed to access this invoice."
+msgstr "Vous n'êtes pas autorisé à accéder à cette facture."

@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_res_partner_form_inherit_location_auto" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.location.auto</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales_purchases']" position="after">
+                <page string="Documents">
+                    <group>
+                        <field name="license_number"/>
+                    </group>
+                    <button name="action_view_documents" string="Documents client" type="object" class="btn-primary"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

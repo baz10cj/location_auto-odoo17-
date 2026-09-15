@@ -1,0 +1,36 @@
+<odoo>
+    <record id="view_form_client_document" model="ir.ui.view">
+        <field name="name">location.client.document.form</field>
+        <field name="model">location.client.document</field>
+        <field name="arch" type="xml">
+            <form string="Document client">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="partner_id"/>
+                        <field name="document_type"/>
+                        <field name="attachment_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_client_document" model="ir.ui.view">
+        <field name="name">location.client.document.tree</field>
+        <field name="model">location.client.document</field>
+        <field name="arch" type="xml">
+            <tree string="Documents clients">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="document_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_location_client_document" model="ir.actions.act_window">
+        <field name="name">Documents clients</field>
+        <field name="res_model">location.client.document</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
